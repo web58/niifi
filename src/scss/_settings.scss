@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+$def-color: #333333;
+$gray-color: #707070;
+$white-color: #ffffff;
+$def-font: 'Nunito', sans-serif;
+$def-blue: #00AFEF;
+*{
+  font-family: $def-font;
+  box-sizing: border-box;
+  color: $def-color;
+  line-height: 1.3;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+html, body{
+  font-size: 16px;
+  color: $def-color;
+  min-height: 100vh!important;
+  height: 100%!important;
+  margin: 0;
+  width: 100vw;
+}
+
+main{
+  flex: 1 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+footer, header{
+  flex: 0 0 auto;
+}
+
+*::before, *::after{
+  max-width: 100%;
+}
+
+ul{
+  margin: 0;
+}
+
+li{
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  display: block;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline-style: none;
+}
+
+body a:hover{
+  //color: $def-color;
+}
+
+img, svg, picture{
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+div, h1, h2, h3, h4, h5, h6, p, span, a{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.3;
+  //color: $def-color;
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+input{
+  max-width: 100%;
+  border: none;
+  padding: 0;
+}
+
+input[type="submit"]{
+  padding: 1px 5px;
+}
+
+input{
+  outline-style: none!important;
+}
+
+.main{
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+
+@media screen
+and (min-width:768px){
+
+}
+
+@media screen
+and (min-width: 1200px){
+
+  .main{
+    padding-left: 65px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    .container{
+      max-width: 1050px;
+    }
+  }
+
+}
+
+@media screen
+and (min-width: 1600px){
+
+  .main{
+    padding-left: 380px;
+
+    .page-news &{
+      padding-bottom: 15px;
+    }
+
+    .container{
+      max-width: 1180px;
+    }
+  }
+
+  body.page-base{
+
+    .main{
+      padding-left: 65px;
+
+      .container{
+        max-width: 1460px;
+      }
+    }
+  }
+
+}
+
+@media screen
+and (min-width: 1920px){
+
+}
+

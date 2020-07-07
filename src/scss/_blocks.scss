@@ -1,0 +1,87 @@
+.def-button{
+  display: block;
+  margin: 0 auto;
+  width: 189px;
+  height: 36px;
+  background-color: $def-blue;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid transparent;
+  line-height: 34px;
+  padding: 0 24px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #EDF9FE;
+    border: 1px solid $def-blue;
+    color: $def-blue;
+  }
+
+  &:focus{
+    background-color: #fff;
+    border: 1px solid $def-blue;
+    color: $def-blue;
+  }
+}
+
+.def-title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.breadcrumbs{
+  margin-bottom: 15px;
+
+  &__list{
+    padding-left: 10px;
+
+    & * {
+      font-size: 14px;
+      font-weight: 300;
+      color: #707070;
+      text-transform: uppercase;
+      padding-right: 5px;
+    }
+
+    a:hover{
+      text-decoration: underline;
+      color: $def-blue;
+    }
+  }
+}
+
+.page-title{
+  margin-bottom: 25px;
+
+  h1{
+    font-size: 18px;
+  }
+}
+
+@media screen
+and (min-width: 1200px){
+
+  .def-button{
+    width: 260px;
+    height: 54px;
+    font-size: 18px;
+    line-height: 52px;
+  }
+
+  .breadcrumbs{
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .page-title{
+    margin-bottom: 35px;
+
+    h1{
+      padding-left: 10px;
+      font-size: 24px;
+    }
+  }
+}
