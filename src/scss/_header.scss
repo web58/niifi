@@ -891,19 +891,20 @@ and (min-width: 1600px){
         z-index: 1;
 
         &-item{
-          width: 170px;
+          width: 165px;
         }
 
       }
 
       &__personal{
-        margin: 0;
+        margin-bottom: 10px;
       }
 
       &__contacts{
         position: relative;
         left: 20px;
         margin-left: auto;
+        margin-bottom: 10px;
 
         &-mail{
           margin-right: 15px;

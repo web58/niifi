@@ -1,2 +1,60 @@
+.footer{
+  padding: 30px 30px 60px;
+  background-image: url('./files/imgs/icons/nasa.png');
+
+  &__logo{
+    margin-bottom: 10px;
+    a{
+      max-width: 240px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__space{
+    margin-bottom: 20px;
+    a{
+      max-width: 220px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__phone{
+    text-align: center;
+    margin-bottom: 15px;
+    a{
+      font-size: 16px;
+      padding-left: 35px;
+      background-image: url('./files/imgs/icons/phone.svg');
+      background-repeat: no-repeat;
+      background-position: 0 center;
+      background-size: contain;
+
+    }
+  }
+
+  &__mail{
+    text-align: center;
+    a{
+      font-size: 16px;
+      padding-left: 35px;
+      background-image: url('./files/imgs/icons/mail.svg');
+      background-repeat: no-repeat;
+      background-position: 0 center;
+      background-size: contain;
+    }
+  }
+}
+
 @media screen
-and (min-width: 1200px){}
+and (min-width: 1200px){
+
+  .footer{
+    padding: 90px 50px;
+
+    &__logo, &__space, &__phone{
+      margin-bottom: 20px;
+    }
+  }
+}

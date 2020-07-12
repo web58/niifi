@@ -1,2 +1,245 @@
 @media screen
-and (min-width: 1200px){}
+and (min-width: 768px){}
+
+@media screen
+and (min-width: 1200px){
+
+  .catalog-systems{
+
+    &__item{
+      margin-bottom: 0;
+
+      a{
+        padding: 30px 20px;
+      }
+
+      &-img{
+        margin-bottom: 25px;
+      }
+
+      &-title{
+        font-size: 16px;
+      }
+
+      &-button{
+        font-size: 16px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  .catalog-sensors{
+
+    &__item{
+      margin-bottom: 0;
+
+      a{
+        padding: 30px 20px;
+      }
+
+      &-img{
+        margin-bottom: 25px;
+      }
+
+      &-title{
+        font-size: 16px;
+      }
+
+      &-button{
+        font-size: 16px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  .catalog-elements{
+
+    &__item{
+      margin-bottom: 0;
+
+      a{
+        padding: 10px 10px;
+      }
+
+      &-img{
+        margin-bottom: 25px;
+      }
+
+      &-title{
+        font-size: 16px;
+      }
+
+      &-button{
+        font-size: 16px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  .catalog-try{
+
+    &__item{
+      margin-bottom: 0;
+
+      a{
+        padding: 30px 20px;
+      }
+
+      &-title{
+        font-size: 16px;
+      }
+
+      &-button{
+        font-size: 16px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  .catalog-technology{
+
+    &__item{
+      margin-bottom: 0;
+
+      a{
+        padding: 30px 20px;
+      }
+
+      &-title{
+        font-size: 16px;
+      }
+
+      &-button{
+        font-size: 16px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  .technologies{
+
+    &__item{
+      padding: 30px 20px 40px;
+
+      &-img{
+        width: 40px;
+        margin-bottom: 30px;
+      }
+
+      &-title{
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .advanced{
+
+    &__item{
+      padding-bottom: 40px;
+
+      &-img{
+        margin-bottom: 40px;
+      }
+
+      &-title{
+        padding: 0 40px;
+      }
+
+      &-text{
+        padding: 0 40px;
+        margin-bottom: 40px;
+      }
+
+      .def-button{
+        margin-left: 40px;
+      }
+    }
+  }
+}
+
+@media screen
+and (min-width: 1600px){
+
+  .catalog-systems{
+
+    &__item{
+
+      a{
+        padding: 50px 20px 40px;
+      }
+
+      &-img{
+        margin-bottom: 40px;
+      }
+
+      &-button{
+        bottom: 40px;
+      }
+    }
+  }
+
+  .catalog-sensors{
+
+    &__item{
+
+      a{
+        padding: 50px 20px 40px;
+      }
+
+      &-img{
+        margin-bottom: 40px;
+      }
+
+      &-button{
+        bottom: 40px;
+      }
+    }
+  }
+
+  .catalog-elements{
+
+    &__item{
+
+      a{
+        padding: 10px 10px;
+      }
+
+      &-img{
+        margin-bottom: 40px;
+      }
+
+      &-button{
+        bottom: 40px;
+      }
+    }
+  }
+
+  .catalog-try{
+
+    &__item{
+
+      a{
+        padding: 50px 20px 40px;
+      }
+
+      &-button{
+        bottom: 40px;
+      }
+    }
+  }
+
+  .catalog-technology{
+
+    &__item{
+
+      a{
+        padding: 50px 20px 40px;
+      }
+
+      &-button{
+        bottom: 40px;
+      }
+    }
+  }
+
+}

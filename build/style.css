@@ -89,15 +89,26 @@ input {
 main {
   padding-top: 70px; }
 
+section {
+  margin-bottom: 50px; }
+
 @media screen and (min-width: 768px) {
   main {
-    padding-top: 130px; } }
+    padding-top: 130px; }
+  section {
+    margin-bottom: 60px; } }
 
 @media screen and (min-width: 1200px) {
   main {
-    padding-top: 180px; } }
+    padding-top: 180px; }
+  section {
+    margin-bottom: 80px; } }
 
 @media screen and (min-width: 1600px) {
+  main {
+    padding-top: 200px; }
+  section {
+    margin-bottom: 90px; }
   .container {
     max-width: 1540px !important; } }
 
@@ -105,6 +116,78 @@ main {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   height: 0; }
+
+.def-title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; }
+
+.slick-slide {
+  margin: 0 15px; }
+
+.slick-list {
+  margin: 0 -15px;
+  padding: 15px 0; }
+
+.all-slider-wrap {
+  position: relative; }
+
+.all-slider-arrows {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .all-slider-arrows ul {
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 0; }
+    .all-slider-arrows ul li {
+      width: 20px;
+      height: 20px;
+      cursor: pointer; }
+      .all-slider-arrows ul li svg {
+        width: 20px; }
+      .all-slider-arrows ul li:first-child {
+        -webkit-transform: scale(-1, 1);
+        transform: scale(-1, 1); }
+
+.def-button {
+  cursor: pointer;
+  width: 160px;
+  height: 48px;
+  border: 1px solid #0F0446;
+  border-radius: 24px;
+  color: #0F0446;
+  font-size: 14px;
+  text-align: center;
+  line-height: 46px; }
+  .def-button:hover {
+    color: #fff;
+    background-color: #0F0446; }
+
+@media screen and (min-width: 768px) {
+  .def-title {
+    font-size: 28px; }
+  .all-slider-arrows ul li {
+    width: 30px;
+    height: 30px; }
+    .all-slider-arrows ul li svg {
+      width: 30px; } }
+
+@media screen and (min-width: 1600px) {
+  .def-title {
+    margin-bottom: 60px; } }
 
 .header {
   padding: 5px 0;
@@ -805,12 +888,433 @@ main {
     width: 375px;
     z-index: 1; }
     .page-scrolled .header__buttons-item {
-      width: 170px; }
+      width: 165px; }
   .page-scrolled .header__personal {
-    margin: 0; }
+    margin-bottom: 10px; }
   .page-scrolled .header__contacts {
     position: relative;
     left: 20px;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-bottom: 10px; }
     .page-scrolled .header__contacts-mail {
       margin-right: 15px; } }
+
+.catalog-systems__item {
+  margin-bottom: 30px; }
+  .catalog-systems__item a {
+    display: block;
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    position: relative; }
+    .catalog-systems__item a:hover {
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 40px #0000001F;
+      box-shadow: 0px 0px 40px #0000001F; }
+      .catalog-systems__item a:hover .catalog-systems__item-title {
+        opacity: 0; }
+      .catalog-systems__item a:hover .catalog-systems__item-button {
+        opacity: 1; }
+  .catalog-systems__item-img {
+    margin: 0 auto 20px;
+    display: block; }
+    .catalog-systems__item-img svg {
+      display: block;
+      margin: 0 auto; }
+  .catalog-systems__item-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center; }
+  .catalog-systems__item-button {
+    opacity: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: calc(100% - 40px); }
+
+.catalog-sensors__item a {
+  display: block;
+  background: #F2F2F2 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  padding: 20px;
+  height: 100%;
+  position: relative; }
+  .catalog-sensors__item a:hover {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 40px #0000001F;
+    box-shadow: 0px 0px 40px #0000001F; }
+    .catalog-sensors__item a:hover .catalog-sensors__item-title {
+      opacity: 0; }
+    .catalog-sensors__item a:hover .catalog-sensors__item-button {
+      opacity: 1; }
+
+.catalog-sensors__item-img {
+  margin: 0 auto 20px;
+  display: block; }
+  .catalog-sensors__item-img svg {
+    display: block;
+    margin: 0 auto; }
+
+.catalog-sensors__item-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center; }
+
+.catalog-sensors__item-button {
+  opacity: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: calc(100% - 40px); }
+
+.catalog-elements__item a {
+  display: block;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  height: 240px; }
+  .catalog-elements__item a::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #0F0446;
+    opacity: .6; }
+  .catalog-elements__item a:hover {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 40px #0000001F;
+    box-shadow: 0px 0px 40px #0000001F; }
+    .catalog-elements__item a:hover::before {
+      display: none; }
+    .catalog-elements__item a:hover .catalog-elements__item-img {
+      display: none; }
+    .catalog-elements__item a:hover .catalog-elements__item-title {
+      color: #343044; }
+
+.catalog-elements__item-img {
+  margin: 0 auto 20px;
+  display: block; }
+  .catalog-elements__item-img svg {
+    display: block;
+    margin: 0 auto; }
+  .catalog-elements__item-img img {
+    display: block;
+    margin: 0 auto; }
+
+.catalog-elements__item-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  width: calc(100% - 30px);
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.catalog-elements__item-button {
+  opacity: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: calc(100% - 40px); }
+
+.catalog-try__item {
+  margin-bottom: 30px; }
+  .catalog-try__item a {
+    display: block;
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    height: 230px; }
+    .catalog-try__item a:hover {
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 40px #0000001F;
+      box-shadow: 0px 0px 40px #0000001F; }
+      .catalog-try__item a:hover .catalog-try__item-button {
+        opacity: 1; }
+  .catalog-try__item-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    width: calc(100% - 30px);
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .catalog-try__item-button {
+    opacity: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: calc(100% - 40px); }
+
+.catalog-technology__item {
+  margin-bottom: 30px; }
+  .catalog-technology__item a {
+    display: block;
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    height: 200px; }
+    .catalog-technology__item a:hover {
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 40px #0000001F;
+      box-shadow: 0px 0px 40px #0000001F; }
+      .catalog-technology__item a:hover .catalog-technology__item-button {
+        opacity: 1; }
+  .catalog-technology__item-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    width: calc(100% - 30px);
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .catalog-technology__item-button {
+    opacity: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: calc(100% - 40px); }
+
+.technologies .col-12.col-md-6.col-lg-4.col-xl-3 {
+  margin-bottom: 30px; }
+  .technologies .col-12.col-md-6.col-lg-4.col-xl-3:last-child {
+    margin-bottom: 0; }
+
+.technologies__item {
+  -webkit-box-shadow: 0px 0px 40px #00000029;
+  box-shadow: 0px 0px 40px #00000029;
+  border-radius: 8px;
+  padding: 20px 30px; }
+  .technologies__item-img {
+    margin: 0 auto 20px;
+    width: 30px; }
+  .technologies__item-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px; }
+  .technologies__item-text {
+    font-size: 14px;
+    text-align: center; }
+    .technologies__item-text ul {
+      list-style: none;
+      padding: 0; }
+      .technologies__item-text ul li {
+        font-size: 14px;
+        margin-bottom: 15px;
+        text-align: center;
+        line-height: 1.5; }
+        .technologies__item-text ul li:last-child {
+          margin-bottom: 0; }
+        .technologies__item-text ul li:nth-child(odd) {
+          font-weight: 700; }
+
+.advanced .col-12.col-lg-6 {
+  margin-bottom: 30px; }
+
+.advanced__item {
+  -webkit-box-shadow: 0px 0px 40px #00000029;
+  box-shadow: 0px 0px 40px #00000029;
+  border-radius: 8px;
+  padding-bottom: 30px; }
+  .advanced__item-img {
+    position: relative;
+    margin-bottom: 30px; }
+    .advanced__item-img svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .advanced__item-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding: 0 30px; }
+  .advanced__item-text {
+    font-size: 14px;
+    padding: 0 30px;
+    line-height: 1.5;
+    margin-bottom: 30px; }
+  .advanced__item .def-button {
+    margin-left: 30px; }
+
+.footer {
+  padding: 30px 30px 60px;
+  background-image: url("./files/imgs/icons/nasa.png"); }
+  .footer__logo {
+    margin-bottom: 10px; }
+    .footer__logo a {
+      max-width: 240px;
+      display: block;
+      margin: 0 auto; }
+  .footer__space {
+    margin-bottom: 20px; }
+    .footer__space a {
+      max-width: 220px;
+      display: block;
+      margin: 0 auto; }
+  .footer__phone {
+    text-align: center;
+    margin-bottom: 15px; }
+    .footer__phone a {
+      font-size: 16px;
+      padding-left: 35px;
+      background-image: url("./files/imgs/icons/phone.svg");
+      background-repeat: no-repeat;
+      background-position: 0 center;
+      background-size: contain; }
+  .footer__mail {
+    text-align: center; }
+    .footer__mail a {
+      font-size: 16px;
+      padding-left: 35px;
+      background-image: url("./files/imgs/icons/mail.svg");
+      background-repeat: no-repeat;
+      background-position: 0 center;
+      background-size: contain; }
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 90px 50px; }
+    .footer__logo, .footer__space, .footer__phone {
+      margin-bottom: 20px; } }
+
+@media screen and (min-width: 1200px) {
+  .catalog-systems__item {
+    margin-bottom: 0; }
+    .catalog-systems__item a {
+      padding: 30px 20px; }
+    .catalog-systems__item-img {
+      margin-bottom: 25px; }
+    .catalog-systems__item-title {
+      font-size: 16px; }
+    .catalog-systems__item-button {
+      font-size: 16px;
+      bottom: 30px; }
+  .catalog-sensors__item {
+    margin-bottom: 0; }
+    .catalog-sensors__item a {
+      padding: 30px 20px; }
+    .catalog-sensors__item-img {
+      margin-bottom: 25px; }
+    .catalog-sensors__item-title {
+      font-size: 16px; }
+    .catalog-sensors__item-button {
+      font-size: 16px;
+      bottom: 30px; }
+  .catalog-elements__item {
+    margin-bottom: 0; }
+    .catalog-elements__item a {
+      padding: 10px 10px; }
+    .catalog-elements__item-img {
+      margin-bottom: 25px; }
+    .catalog-elements__item-title {
+      font-size: 16px; }
+    .catalog-elements__item-button {
+      font-size: 16px;
+      bottom: 30px; }
+  .catalog-try__item {
+    margin-bottom: 0; }
+    .catalog-try__item a {
+      padding: 30px 20px; }
+    .catalog-try__item-title {
+      font-size: 16px; }
+    .catalog-try__item-button {
+      font-size: 16px;
+      bottom: 30px; }
+  .catalog-technology__item {
+    margin-bottom: 0; }
+    .catalog-technology__item a {
+      padding: 30px 20px; }
+    .catalog-technology__item-title {
+      font-size: 16px; }
+    .catalog-technology__item-button {
+      font-size: 16px;
+      bottom: 30px; }
+  .technologies__item {
+    padding: 30px 20px 40px; }
+    .technologies__item-img {
+      width: 40px;
+      margin-bottom: 30px; }
+    .technologies__item-title {
+      margin-bottom: 40px; }
+  .advanced__item {
+    padding-bottom: 40px; }
+    .advanced__item-img {
+      margin-bottom: 40px; }
+    .advanced__item-title {
+      padding: 0 40px; }
+    .advanced__item-text {
+      padding: 0 40px;
+      margin-bottom: 40px; }
+    .advanced__item .def-button {
+      margin-left: 40px; } }
+
+@media screen and (min-width: 1600px) {
+  .catalog-systems__item a {
+    padding: 50px 20px 40px; }
+  .catalog-systems__item-img {
+    margin-bottom: 40px; }
+  .catalog-systems__item-button {
+    bottom: 40px; }
+  .catalog-sensors__item a {
+    padding: 50px 20px 40px; }
+  .catalog-sensors__item-img {
+    margin-bottom: 40px; }
+  .catalog-sensors__item-button {
+    bottom: 40px; }
+  .catalog-elements__item a {
+    padding: 10px 10px; }
+  .catalog-elements__item-img {
+    margin-bottom: 40px; }
+  .catalog-elements__item-button {
+    bottom: 40px; }
+  .catalog-try__item a {
+    padding: 50px 20px 40px; }
+  .catalog-try__item-button {
+    bottom: 40px; }
+  .catalog-technology__item a {
+    padding: 50px 20px 40px; }
+  .catalog-technology__item-button {
+    bottom: 40px; } }

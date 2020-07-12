@@ -99,11 +99,19 @@ main{
   padding-top: 70px;
 }
 
+section{
+  margin-bottom: 50px;
+}
+
 @media screen
 and (min-width:768px){
 
   main{
     padding-top: 130px;
+  }
+
+  section{
+    margin-bottom: 60px;
   }
 
 }
@@ -114,10 +122,22 @@ and (min-width: 1200px){
   main{
     padding-top: 180px;
   }
+
+  section{
+    margin-bottom: 80px;
+  }
 }
 
 @media screen
 and (min-width: 1600px){
+
+  main{
+    padding-top: 200px;
+  }
+
+  section{
+    margin-bottom: 90px;
+  }
 
   .container{
     max-width: 1540px!important;

@@ -8,7 +8,7 @@ jQuery(function($) {
 
   $('input[type=tel]').mask('+0(000) 000-0000');
 
-  //  MASKS OFF
+  //  OFF
 
   // MENU BURGER SEARCH ON
 
@@ -20,10 +20,10 @@ jQuery(function($) {
     $('.header__personal-search').toggleClass('active')
   });
 
-  // MENU BURGER SEARCH OFF
+  //  OFF
 
 
-  // SCROLL
+  // SCROLL ON
 
   if (window.matchMedia("(min-width: 1200px) and (max-width: 1599px)").matches) {
 
@@ -54,7 +54,119 @@ jQuery(function($) {
     }
   }
 
+  //  OFF
 
+  // SLIDERS ON
+
+  $('.first-slider').slick({
+    slidesToShow: 6,
+    arrows: true,
+    prevArrow: $('.prev-arrow'),
+    nextArrow: $('.next-arrow'),
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
+  });
+
+  $('.second-slider').slick({
+    slidesToShow: 6,
+    arrows: true,
+    prevArrow: $('.prev-arrow'),
+    nextArrow: $('.next-arrow'),
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+  $('.third-slider').slick({
+    slidesToShow: 4,
+    arrows: true,
+    prevArrow: $('.prev-arrow'),
+    nextArrow: $('.next-arrow'),
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+  $('.fourth-slider').slick({
+    slidesToShow: 6,
+    arrows: true,
+    prevArrow: $('.prev-arrow'),
+    nextArrow: $('.next-arrow'),
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
+  });
+
+  // Off
 
 
 });
