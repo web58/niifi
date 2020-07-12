@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
-$def-color: #333333;
-$gray-color: #707070;
-$white-color: #ffffff;
-$def-font: 'Nunito', sans-serif;
-$def-blue: #00AFEF;
+$def-color: #343044;
+$def-font: 'Montserrat', sans-serif;
+
 *{
   font-family: $def-font;
   box-sizing: border-box;
@@ -96,11 +94,6 @@ input{
   outline-style: none!important;
 }
 
-.main{
-  padding-top: 47px;
-  padding-bottom: 47px;
-}
-
 @media screen
 and (min-width:768px){
 
@@ -109,43 +102,11 @@ and (min-width:768px){
 @media screen
 and (min-width: 1200px){
 
-  .main{
-    padding-left: 65px;
-    padding-top: 75px;
-    padding-bottom: 75px;
-
-    .container{
-      max-width: 1050px;
-    }
-  }
-
 }
 
 @media screen
 and (min-width: 1600px){
 
-  .main{
-    padding-left: 380px;
-
-    .page-news &{
-      padding-bottom: 15px;
-    }
-
-    .container{
-      max-width: 1180px;
-    }
-  }
-
-  body.page-base{
-
-    .main{
-      padding-left: 65px;
-
-      .container{
-        max-width: 1460px;
-      }
-    }
-  }
 
 }
 
