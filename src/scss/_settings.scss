@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 $def-color: #343044;
+$sub-color: #0F0446;
 $def-font: 'Montserrat', sans-serif;
 
 *{
@@ -94,24 +95,34 @@ input{
   outline-style: none!important;
 }
 
+main{
+  padding-top: 70px;
+}
+
 @media screen
 and (min-width:768px){
+
+  main{
+    padding-top: 130px;
+  }
 
 }
 
 @media screen
 and (min-width: 1200px){
 
+  main{
+    padding-top: 180px;
+  }
 }
 
 @media screen
 and (min-width: 1600px){
 
+  .container{
+    max-width: 1540px!important;
+  }
 
 }
 
-@media screen
-and (min-width: 1920px){
-
-}
 
