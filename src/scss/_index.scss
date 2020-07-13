@@ -385,3 +385,157 @@
     }
   }
 }
+
+// system catalog page
+.systems{
+
+  &__item{
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    a{
+      display: block;
+      
+      &:hover{
+        .systems__item-img{
+          background-color: #fff;
+          box-shadow: 0px 0px 40px #0000001F;
+        }
+      }
+
+      &:hover .def-button{
+        color: #fff;
+        background-color: $sub-color;
+      }
+    }
+
+    &-img{
+      display: block;
+      padding: 50px 20px;
+      background: #F2F2F2 0% 0% no-repeat padding-box;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      svg{
+        margin: 0 auto;
+      }
+    }
+
+    &-title{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .def-button{
+      margin: 0 auto;
+    }
+  }
+}
+
+.news{
+
+  .row{
+    position: relative;
+  }
+
+  &__slider{
+
+    &-item{
+      position: relative;
+      padding-bottom: 60px;
+
+      &__img{
+        margin-bottom: 30px;
+        img{
+          margin: 0 auto;
+        }
+      }
+
+      &__title{
+        font-weight: 700;
+        padding: 0 20px;
+        margin-bottom: 40px;
+      }
+
+      &__button{
+        display: none;
+        padding: 0 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40px;
+        font-weight: 700;
+      }
+
+      &:hover{
+        box-shadow: 0px 0px 40px #00000029;
+
+        .news__slider-item__button{
+          display: block;
+        }
+      }
+    }
+  }
+
+  .all-slider-arrows{
+    top: 40%;
+
+    svg{
+      path{
+        fill: #fff!important;
+      }
+    }
+  }
+}
+
+// elements catalog page
+
+.elements{
+
+  &__item{
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    a{
+      display: block;
+      padding-bottom: 70px;
+      position: relative;
+      height: 100%;
+
+      &:hover{
+        .elements__item-img{
+          box-shadow: 0px 0px 40px #0000001F;
+        }
+      }
+
+      &:hover .def-button{
+        color: #fff;
+        background-color: $sub-color;
+      }
+    }
+
+    &-img{
+      display: block;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      img{
+        margin: 0 auto;
+      }
+    }
+
+    &-title{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .def-button{
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

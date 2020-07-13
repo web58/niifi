@@ -155,6 +155,38 @@ and (min-width: 1200px){
       }
     }
   }
+
+  // system catalog page
+  .systems{
+
+    &__item{
+      margin-bottom: 0;
+
+      &-img{
+        margin-bottom: 40px;
+      }
+
+      &-title{
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  // elements catalog page
+  .elements{
+
+    &__item{
+      margin-bottom: 0;
+
+      &-img{
+        margin-bottom: 40px;
+      }
+
+      &-title{
+        margin-bottom: 40px;
+      }
+    }
+  }
 }
 
 @media screen

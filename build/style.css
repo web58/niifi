@@ -123,6 +123,11 @@ section {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase; }
+  .def-title a {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; }
 
 .slick-slide {
   margin: 0 15px; }
@@ -163,6 +168,7 @@ section {
         transform: scale(-1, 1); }
 
 .def-button {
+  display: block;
   cursor: pointer;
   width: 160px;
   height: 48px;
@@ -176,9 +182,17 @@ section {
     color: #fff;
     background-color: #0F0446; }
 
+.breadcrumbs a {
+  padding-right: 10px; }
+
+.breadcrumbs span {
+  padding-right: 10px; }
+
 @media screen and (min-width: 768px) {
   .def-title {
     font-size: 28px; }
+    .def-title a {
+      font-size: 28px; }
   .all-slider-arrows ul li {
     width: 30px;
     height: 30px; }
@@ -269,6 +283,9 @@ section {
       order: 1; }
   .header__nav {
     display: none; }
+    .header__nav ul li a:hover {
+      color: #0F0446;
+      text-decoration: underline; }
     .header-opened .header__nav {
       display: block;
       -webkit-box-ordinal-group: 3;
@@ -288,6 +305,9 @@ section {
             font-weight: 600; }
   .header__navigation {
     display: none; }
+    .header__navigation ul li a:hover {
+      color: #0F0446;
+      text-decoration: underline; }
     .header-opened .header__navigation {
       display: block;
       -webkit-box-ordinal-group: 4;
@@ -1179,6 +1199,97 @@ section {
   .advanced__item .def-button {
     margin-left: 30px; }
 
+.systems__item {
+  margin-bottom: 30px; }
+  .systems__item:last-child {
+    margin-bottom: 0; }
+  .systems__item a {
+    display: block; }
+    .systems__item a:hover .systems__item-img {
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 40px #0000001F;
+      box-shadow: 0px 0px 40px #0000001F; }
+    .systems__item a:hover .def-button {
+      color: #fff;
+      background-color: #0F0446; }
+  .systems__item-img {
+    display: block;
+    padding: 50px 20px;
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    margin-bottom: 30px; }
+    .systems__item-img svg {
+      margin: 0 auto; }
+  .systems__item-title {
+    text-align: center;
+    margin-bottom: 30px; }
+  .systems__item .def-button {
+    margin: 0 auto; }
+
+.news .row {
+  position: relative; }
+
+.news__slider-item {
+  position: relative;
+  padding-bottom: 60px; }
+  .news__slider-item__img {
+    margin-bottom: 30px; }
+    .news__slider-item__img img {
+      margin: 0 auto; }
+  .news__slider-item__title {
+    font-weight: 700;
+    padding: 0 20px;
+    margin-bottom: 40px; }
+  .news__slider-item__button {
+    display: none;
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    font-weight: 700; }
+  .news__slider-item:hover {
+    -webkit-box-shadow: 0px 0px 40px #00000029;
+    box-shadow: 0px 0px 40px #00000029; }
+    .news__slider-item:hover .news__slider-item__button {
+      display: block; }
+
+.news .all-slider-arrows {
+  top: 40%; }
+  .news .all-slider-arrows svg path {
+    fill: #fff !important; }
+
+.elements__item {
+  margin-bottom: 30px; }
+  .elements__item:last-child {
+    margin-bottom: 0; }
+  .elements__item a {
+    display: block;
+    padding-bottom: 70px;
+    position: relative;
+    height: 100%; }
+    .elements__item a:hover .elements__item-img {
+      -webkit-box-shadow: 0px 0px 40px #0000001F;
+      box-shadow: 0px 0px 40px #0000001F; }
+    .elements__item a:hover .def-button {
+      color: #fff;
+      background-color: #0F0446; }
+  .elements__item-img {
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 30px; }
+    .elements__item-img img {
+      margin: 0 auto; }
+  .elements__item-title {
+    text-align: center;
+    margin-bottom: 30px; }
+  .elements__item .def-button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
 .footer {
   padding: 30px 30px 60px;
   background-image: url("./files/imgs/icons/nasa.png"); }
@@ -1289,7 +1400,19 @@ section {
       padding: 0 40px;
       margin-bottom: 40px; }
     .advanced__item .def-button {
-      margin-left: 40px; } }
+      margin-left: 40px; }
+  .systems__item {
+    margin-bottom: 0; }
+    .systems__item-img {
+      margin-bottom: 40px; }
+    .systems__item-title {
+      margin-bottom: 40px; }
+  .elements__item {
+    margin-bottom: 0; }
+    .elements__item-img {
+      margin-bottom: 40px; }
+    .elements__item-title {
+      margin-bottom: 40px; } }
 
 @media screen and (min-width: 1600px) {
   .catalog-systems__item a {

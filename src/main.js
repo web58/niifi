@@ -166,6 +166,33 @@ jQuery(function($) {
     ]
   });
 
+  $('.news__slider').slick({
+    slidesToShow: 4,
+    arrows: true,
+    prevArrow: $('.prev-arrow'),
+    nextArrow: $('.next-arrow'),
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
   // Off
 
 

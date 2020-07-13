@@ -93,6 +93,17 @@
   &__nav{
     display: none;
 
+    ul{
+
+      li{
+
+        a:hover{
+          color: $sub-color;
+          text-decoration: underline;
+        }
+      }
+    }
+
     .header-opened &{
       display: block;
       order: 2;
@@ -120,6 +131,17 @@
 
   &__navigation{
     display: none;
+
+    ul{
+
+      li{
+
+        a:hover{
+          color: $sub-color;
+          text-decoration: underline;
+        }
+      }
+    }
 
     .header-opened &{
       display: block;
