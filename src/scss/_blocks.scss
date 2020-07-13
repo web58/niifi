@@ -105,6 +105,20 @@
   }
 }
 
+.table-wrap{
+  margin-bottom: 45px;
+}
+
+@media screen
+and (max-width: 1199.98px){
+
+  .table-wrap{
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 35px;
+  }
+}
+
 @media screen
 and (min-width: 768px){
 

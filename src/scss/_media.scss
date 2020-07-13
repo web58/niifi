@@ -208,6 +208,97 @@ and (min-width: 1200px){
 
     }
   }
+
+  // pezo page
+
+  .pezo{
+
+    &__left{
+
+      &-img{
+
+        img{
+          width: auto;
+        }
+      }
+    }
+
+    &__right{
+
+      &-top{
+        display: flex;
+
+        &__text{
+          width: 100%;
+          padding-right: 15px;
+        }
+
+        &__buttons{
+          padding-left: 15px;
+          min-width: 175px;
+        }
+      }
+    }
+  }
+
+  // measuring page
+
+  .measuring{
+
+    &__view{
+      display: flex;
+      margin-bottom: 35px;
+
+      .col-12{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+      }
+    }
+
+    &.build-table{
+
+      .measuring__list{
+
+        &-item{
+
+          .inner{
+            display: flex;
+          }
+
+          &__img{
+            width: 450px;
+            min-width: 450px;
+            margin-right: 45px;
+            margin-bottom: 0;
+          }
+
+          &__content{
+            position: relative;
+            display: flex;
+            padding-bottom: 55px;
+
+            &-wrap{
+              width: 100%;
+              padding-right: 16px;
+            }
+
+            &-buttons{
+              min-width: 175px;
+              padding-left: 15px;
+
+              .def-button.order{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen
@@ -292,6 +383,15 @@ and (min-width: 1600px){
       &-button{
         bottom: 40px;
       }
+    }
+  }
+
+  // pezo page
+
+  .pezo{
+
+    &__bot{
+      margin-left: auto;
     }
   }
 

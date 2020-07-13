@@ -195,5 +195,35 @@ jQuery(function($) {
 
   // Off
 
+  // MEASURING AND SYSTEM GRID ON
+
+  $('.measuring__view-item').on('click', function () {
+
+    if ($(this).hasClass('go-to-grid')){
+
+      if ($(this).closest('.measuring').hasClass('build-table')){
+
+        $(this).closest('.measuring').removeClass('build-table').addClass('build-grid');
+
+        $(this).closest('.measuring').find('.measuring__list-item').removeClass('col-xl-12').addClass('col-xl-4');
+      }
+    }
+
+    if ($(this).hasClass('go-to-table')){
+
+      if ($(this).closest('.measuring').hasClass('build-grid')){
+
+        $(this).closest('.measuring').removeClass('build-grid').addClass('build-table');
+
+        $(this).closest('.measuring').find('.measuring__list-item').removeClass('col-xl-4').addClass('col-xl-12');
+      }
+    }
+
+
+
+  });
+
+  // OFF
+
 
 });
