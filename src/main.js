@@ -225,5 +225,30 @@ jQuery(function($) {
 
   // OFF
 
+  // FORMS ON
+
+  $('.header__buttons-item, .def-button.order').on('click', function () {
+
+    $('.popup-form.form-order').fadeIn();
+
+  });
+
+  $('.popup-form__cont-exit, .popup-form__back').on('click', function () {
+
+    $('.popup-form').fadeOut('300', function() {
+      $('.popup-form').removeClass('thanks');
+    });
+
+  });
+
+  $('.popup-form .sub-button').on('click', function (evt) {
+
+    evt.preventDefault();
+    $(this).closest('.popup-form').addClass('thanks')
+
+  });
+
+  // OFF
+
 
 });
