@@ -157,10 +157,13 @@ and (min-width: 1200px){
   }
 
   // system catalog page
+  // sensors list
+  // manufacture-technology
   .systems{
+    margin-bottom: 40px;
 
     &__item{
-      margin-bottom: 0;
+      margin-bottom: 50px;
 
       &-img{
         margin-bottom: 40px;
@@ -185,6 +188,24 @@ and (min-width: 1200px){
       &-title{
         margin-bottom: 40px;
       }
+    }
+  }
+
+  // tries product page
+
+  .try-product{
+
+    &__wrap{
+
+    }
+
+    &__item{
+      margin-bottom: 50px;
+
+      .try-product-text{
+        margin-bottom: 40px;
+      }
+
     }
   }
 }
