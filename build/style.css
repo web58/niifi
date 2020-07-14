@@ -298,13 +298,13 @@ section {
 
 @media screen and (min-width: 1200px) {
   main {
-    padding-top: 180px; }
+    padding-top: 195px; }
   section {
     margin-bottom: 80px; } }
 
 @media screen and (min-width: 1600px) {
   main {
-    padding-top: 200px; }
+    padding-top: 210px; }
   section {
     margin-bottom: 90px; }
   .container {
@@ -456,6 +456,7 @@ section {
     -ms-flex-align: center;
     align-items: center; }
     .header__burger-wrap {
+      cursor: pointer;
       position: relative;
       height: 35px;
       width: 55px; }
@@ -769,6 +770,9 @@ section {
       -ms-flex-order: 1;
       order: 1;
       margin-bottom: 10px; }
+    .header__navigation ul li a.active {
+      text-decoration: underline;
+      color: #0F0446; }
     .header-opened .header__navigation {
       margin-bottom: 30px; }
     .header__logo {
@@ -1000,6 +1004,8 @@ section {
     padding-bottom: 15px;
     -webkit-box-shadow: 0px 0px 15px #0000001A;
     box-shadow: 0px 0px 15px #0000001A; }
+    .header.header-opened .header__nav ul li {
+      margin-bottom: 15px; }
   .header.header-opened .header__navigation {
     -webkit-box-ordinal-group: 11;
     -ms-flex-order: 10;
@@ -1646,6 +1652,114 @@ section {
     -webkit-box-shadow: 0px 0px 40px #0000001F;
     box-shadow: 0px 0px 40px #0000001F; }
 
+.testing__page-content p {
+  margin-bottom: 15px; }
+
+.testing__page-content ul {
+  list-style: none;
+  margin-bottom: 20px; }
+  .testing__page-content ul li {
+    margin-bottom: 5px; }
+
+.testing__page-content a {
+  text-decoration: underline;
+  display: block; }
+
+.testing__page-button .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.2;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.niokr__text {
+  margin-bottom: 20px; }
+  .niokr__text p {
+    margin-bottom: 20px; }
+
+.niokr__button .def-button {
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 170px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.niokr__imgs {
+  margin-bottom: 35px; }
+
+.search-result__input {
+  margin-bottom: 35px; }
+  .search-result__input label {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 800px; }
+    .search-result__input label::after {
+      display: block;
+      content: '';
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      background-image: url("./files/imgs/icons/search.svg"); }
+    .search-result__input label input {
+      display: block;
+      border: 1px solid #0F0446;
+      border-radius: 24px;
+      height: 42px;
+      width: 100%;
+      padding: 0 20px;
+      padding-right: 35px; }
+
+.search-result__count {
+  margin-bottom: 35px; }
+  .search-result__count p span {
+    padding: 5px; }
+
+.search-result__items {
+  margin-bottom: 55px; }
+  .search-result__items-title {
+    margin-bottom: 20px;
+    font-weight: 700; }
+  .search-result__items-text {
+    margin-bottom: 25px; }
+
+.page-404__img {
+  margin-bottom: 20px; }
+  .page-404__img img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px; }
+
+.page-404__text {
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px; }
+
+.page-404__buttons {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
 .footer {
   padding: 30px 30px 60px;
   background-image: url("./files/imgs/icons/nasa.png"); }
@@ -1824,11 +1938,53 @@ section {
     .popup-form.thanks .popup-form__cont-thanks-text {
       font-size: 13px; }
 
+.popup-form.form-comment {
+  display: none; }
+  .popup-form.form-comment form .textarea-label {
+    margin-bottom: 20px; }
+    .popup-form.form-comment form .textarea-label textarea {
+      border: 1px solid #0F0446;
+      width: 100%;
+      height: 100px;
+      border-radius: 21px;
+      padding: 3px 15px; }
+    .popup-form.form-comment form .textarea-label span {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 700; }
+  .popup-form.form-comment form label.input-label input[type="file"] {
+    display: none; }
+  .popup-form.form-comment form label.input-label input[type="file"] + span {
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid #0F0446;
+    border-radius: 21px;
+    padding: 0 15px 0 35px;
+    height: 42px;
+    display: block;
+    line-height: 42px;
+    background-image: url("./files/imgs/paper-clip.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px center; }
+
 @media screen and (min-width: 1200px) {
   .footer {
     padding: 90px 50px; }
     .footer__logo, .footer__space, .footer__phone {
       margin-bottom: 20px; } }
+
+@media screen and (min-width: 768px) {
+  .testing__page .col-12 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .testing__page-content {
+    width: 100%;
+    padding-right: 15px; }
+  .testing__page-button {
+    padding-left: 15px;
+    min-width: 175px; } }
 
 @media screen and (min-width: 1200px) {
   .catalog-systems__item {

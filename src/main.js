@@ -20,6 +20,17 @@ jQuery(function($) {
     $('.header__personal-search').toggleClass('active')
   });
 
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    var burgerWrap = $('.header__burger-wrap');
+    var div = $(".header__nav"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0 && !burgerWrap.is(e.target)  )  { // и не по его дочерним элементам
+      if ($('.header').hasClass('header-opened')){
+        $('.header').removeClass('header-opened');
+      }
+    }
+  });
+
   //  OFF
 
 
@@ -227,9 +238,15 @@ jQuery(function($) {
 
   // FORMS ON
 
-  $('.header__buttons-item, .def-button.order').on('click', function () {
+  $('.header__buttons-item.for-order-form, .def-button.for-order-form, .sub-button.for-order-form').on('click', function () {
 
     $('.popup-form.form-order').fadeIn();
+
+  });
+
+  $('.header__buttons-item.for-comment-form, .def-button.for-comment-form, .sub-button.for-comment-form').on('click', function () {
+
+    $('.popup-form.form-comment').fadeIn();
 
   });
 
@@ -247,6 +264,14 @@ jQuery(function($) {
     $(this).closest('.popup-form').addClass('thanks')
 
   });
+
+  $('input[type="file"]').change(function() {
+    var file = $('input[type="file"]')[0].files[0].name;
+    $(this).closest('label').find('span').text(file);
+
+  });
+
+  // for-comment-form
 
   // OFF
 

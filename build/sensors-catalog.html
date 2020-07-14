@@ -48,9 +48,9 @@
           <li><a href="./sensors-catalog.html">Датчики</a></li>
           <li><a href="./elements-catalog.html">Пьезоэлементы</a></li>
           <li><a href="./product-try.html">Испытания</a></li>
-          <li><a href="#">НИОКР</a></li>
+          <li><a href="./niokr.html">НИОКР</a></li>
           <li><a href="./manufacture-technology.html">Производство и технологии</a></li>
-          <li><a href="#">География продаж</a></li>
+          <li><a href="#" class="active">География продаж</a></li>
         </ul>
       </div>
       
@@ -61,14 +61,14 @@
       <div class="header__title col-lg-4">Контрольно-измерительные<br> приборы, системы и пьезотехники</div>
 
       <div class="header__buttons col-12 col-md-6 col-lg-5">
-        <div class="header__buttons-item">Скачать каталог</div>
+        <div class="header__buttons-item for-order-form">Скачать каталог</div>
         <div class="header__buttons-item">Заказать изделие</div>
       </div>
 
       <div class="header__space col-12 col-md-3 col-lg-2">
         <a href="#">
-          <img src="./files/imgs/icons/roscosmos.png" alt="" style="display: none;">
-          <img src="./files/imgs/icons/mass.png" alt="">
+          <img src="./files/imgs/icons/roscosmos.png" alt="">
+          <img src="./files/imgs/icons/mass.png" alt="" style="display: none;">
         </a>
       </div>
 
@@ -116,14 +116,14 @@
         <div class="sensors-catalog__form col-12 col-lg-6">
           <div class="inner">
             <div class="sensors-catalog__form-title">Подобрать нужный датчик</div>
-            <div class="sensors-catalog__form-button sub-button">Оставить заявку</div>
+            <div class="sensors-catalog__form-button sub-button for-comment-form">Оставить заявку</div>
           </div>
         </div>
 
         <div class="sensors-catalog__form col-12 col-lg-6">
           <div class="inner">
             <div class="sensors-catalog__form-title">Изготовить нужный датчик</div>
-            <div class="sensors-catalog__form-button sub-button">Оставить заявку</div>
+            <div class="sensors-catalog__form-button sub-button for-comment-form">Оставить заявку</div>
           </div>
         </div>
 
@@ -1306,8 +1306,8 @@
       </div>
       <div class="col-12 footer__space">
         <a href="#">
-          <img src="./files/imgs/icons/roscosmos.png" alt="" style="display: none;">
-          <img src="./files/imgs/icons/mass.png" alt="">
+          <img src="./files/imgs/icons/roscosmos.png" alt="">
+          <img src="./files/imgs/icons/mass.png" alt="" style="display: none;">
         </a>
       </div>
       <div class="col-12 footer__phone">
@@ -1338,6 +1338,50 @@
         <input type="checkbox" checked>
         <span>Отправляя свои данные, я согласен(-на) с Политикой конфиденциальности сайта.</span>
       </label>
+      <input type="submit" class="sub-button" value="Отправить">
+    </form>
+    <div class="popup-form__cont-thanks">
+      <div class="popup-form__cont-thanks-title">Спасибо за заявку!</div>
+      <div class="popup-form__cont-thanks-img">
+        <img src="./files/imgs/form.jpg" alt="">
+      </div>
+      <div class="popup-form__cont-thanks-text">Наш менеджер скоро с Вами свяжется.</div>
+    </div>
+  </div>
+</div>
+
+<div class="popup-form form-comment">
+  <div class="popup-form__back"></div>
+  <div class="popup-form__cont">
+    <div class="popup-form__cont-exit"></div>
+    <form>
+      <div class="popup-form__title">Заказать звонок</div>
+
+      <label class="input-label">
+        <span>Имя</span>
+        <input type="text">
+      </label>
+
+      <label class="input-label">
+        <span>Телефон</span>
+        <input type="tel" placeholder="Телефон">
+      </label>
+
+      <label class="textarea-label">
+        <span>Текст комментария</span>
+        <textarea></textarea>
+      </label>
+
+      <label class="input-label">
+        <input type="file" placeholder="Прикрепить файл...">
+        <span>Прикрепить файл...</span>
+      </label>
+
+      <label class="checkbox-label">
+        <input type="checkbox" checked>
+        <span>Отправляя свои данные, я согласен(-на) с Политикой конфиденциальности сайта.</span>
+      </label>
+
       <input type="submit" class="sub-button" value="Отправить">
     </form>
     <div class="popup-form__cont-thanks">

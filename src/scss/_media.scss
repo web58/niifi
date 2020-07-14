@@ -1,5 +1,25 @@
 @media screen
-and (min-width: 768px){}
+and (min-width: 768px){
+
+  // testing page
+
+  .testing__page{
+
+    .col-12{
+      display: flex;
+    }
+
+    &-content{
+      width: 100%;
+      padding-right: 15px;
+    }
+
+    &-button{
+      padding-left: 15px;
+      min-width: 175px;
+    }
+  }
+}
 
 @media screen
 and (min-width: 1200px){

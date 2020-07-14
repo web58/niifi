@@ -766,3 +766,158 @@
     }
   }
 }
+
+// testing page
+
+.testing__page{
+
+  &-content{
+
+    p{
+      margin-bottom: 15px;
+    }
+
+    ul{
+      list-style: none;
+      margin-bottom: 20px;
+
+      li{
+        margin-bottom: 5px;
+      }
+    }
+
+    a{
+      text-decoration: underline;
+      display: block;
+    }
+  }
+
+  &-button{
+
+    .question{
+      display: flex;
+      line-height: 1.2;
+      align-items: center;
+    }
+  }
+}
+
+// NIOKR PAGE
+
+.niokr{
+
+  &__text{
+    margin-bottom: 20px;
+
+    p{
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__button{
+
+    .def-button{
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      width: 170px;
+      justify-content: center;
+    }
+  }
+
+  &__imgs{
+    margin-bottom: 35px;
+  }
+}
+
+// search page
+
+.search-result{
+
+  &__input{
+    margin-bottom: 35px;
+
+    label{
+      display: block;
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      &::after{
+        display: block;
+        content: '';
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background-image: url('./files/imgs/icons/search.svg');
+      }
+
+      input{
+        display: block;
+        border: 1px solid #0F0446;
+        border-radius: 24px;
+        height: 42px;
+        width: 100%;
+        padding: 0 20px;
+        padding-right: 35px;
+      }
+    }
+  }
+
+  &__count{
+    margin-bottom: 35px;
+
+    p{
+
+      span{
+        padding: 5px;
+      }
+    }
+  }
+
+  &__items{
+    margin-bottom: 55px;
+
+    &-title{
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    &-text{
+      margin-bottom: 25px;
+    }
+  }
+}
+
+// 404 page
+
+.page-404{
+
+  &__img{
+    margin-bottom: 20px;
+    img{
+      margin: 0 auto;
+      width: 100%;
+      max-width: 800px;
+    }
+  }
+
+  &__text{
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  &__buttons{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
