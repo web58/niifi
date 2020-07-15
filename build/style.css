@@ -410,6 +410,14 @@ section {
 .table-wrap {
   margin-bottom: 45px; }
 
+.m-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
 @media screen and (max-width: 1199.98px) {
   .table-wrap {
     width: 100%;
@@ -1988,12 +1996,15 @@ section {
     position: relative; }
     .quiz__cont .def-title {
       font-size: 18px;
-      margin-bottom: 30px; }
+      margin-bottom: 0; }
     .quiz__cont-sec__title {
       font-size: 16px;
       font-weight: 700;
       margin-bottom: 20px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding-top: 30px; }
+    .quiz__cont .sub-title {
+      padding-top: 25px; }
     .quiz__cont-exit {
       position: absolute;
       right: 20px;
@@ -2023,6 +2034,44 @@ section {
         top: 11px;
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg); }
+    .quiz__cont-var label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      cursor: pointer; }
+      .quiz__cont-var label.active input + span::after {
+        display: block; }
+      .quiz__cont-var label span {
+        position: relative;
+        padding-left: 35px;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1; }
+        .quiz__cont-var label span::before {
+          display: block;
+          content: '';
+          width: 18px;
+          height: 18px;
+          border: 1px solid #0F0446;
+          position: absolute;
+          left: 0;
+          top: 0; }
+        .quiz__cont-var label span::after {
+          display: none;
+          content: '✔';
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          left: 3px;
+          top: 0; }
+      .quiz__cont-var label input {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; }
 
 @media screen and (min-width: 1200px) {
   .footer {

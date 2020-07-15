@@ -275,5 +275,15 @@ jQuery(function($) {
 
   // OFF
 
+  // FORM PAGE ON
+
+  $('.quiz__cont-var label').on('click', function () {
+    $(this).closest('.quiz__cont-var').siblings().find('input').val('');
+    $(this).closest('.quiz__cont-var').siblings().find('label').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  // OFF
+
 
 });

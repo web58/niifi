@@ -285,7 +285,7 @@
 
     .def-title{
       font-size: 18px;
-      margin-bottom: 30px;
+      margin-bottom: 0;
     }
 
     &-sec__title{
@@ -293,6 +293,11 @@
       font-weight: 700;
       margin-bottom: 20px;
       text-transform: uppercase;
+      padding-top: 30px;
+    }
+
+    .sub-title{
+      padding-top: 25px;
     }
 
     &-exit{
@@ -327,6 +332,63 @@
         transform: rotate(-45deg);
       }
     }
+
+    &-radio{
+
+    }
+
+    &-number{
+
+    }
+
+    &-var{
+
+      label{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+
+        &.active{
+          input + span::after{
+            display: block;
+          }
+        }
+
+        span{
+          position: relative;
+          padding-left: 35px;
+          order: 1;
+
+          &::before{
+            display: block;
+            content: '';
+            width: 18px;
+            height: 18px;
+            border:  1px solid $sub-color;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+
+          &::after{
+            display: none;
+            content: '✔';
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            left: 3px;
+            top: 0;
+          }
+        }
+
+        input{
+          order: 2;
+        }
+
+
+      }
+    }
+
   }
 }
 

@@ -378,6 +378,7 @@
 
 <div class="quiz">
   <div class="quiz__cont container">
+
     <div class="quiz__cont-exit"></div>
 
     <div class="row">
@@ -388,86 +389,524 @@
 
       <h2 class="col-12 quiz__cont-sec__title def-title">Основные технические характеристики</h2>
 
-      <div class="col-12 sub-title">1. Измеряемая величина</div>
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Измеряемая величина</div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        <label>
-          <input type="radio">
-        </label>
+        <div class="col-12 col-md-6 col-xl-4 quiz__cont-radio">
+          <label>
+            <input type="radio" name="izmer-vel">
+            <span>линейное ускорение</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 quiz__cont-radio">
+          <label>
+            <input type="radio" name="izmer-vel">
+            <span>вибрационное ускорение</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 quiz__cont-radio">
+          <label>
+            <input type="radio" name="izmer-vel">
+            <span>ударное ускорение</span>
+          </label>
+        </div>
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        <label>
-          <input type="radio">
-        </label>
+      <div class="m-wrap" data-form="2">
+        <div class="col-12 sub-title">2. Диапазон изменений, м/с2</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="от">
+            <span>от</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        <label>
-          <input type="radio">
-        </label>
+      <div class="m-wrap" data-form="3">
+        <div class="col-12 sub-title">3. Частотный диапазон измерений, Гц</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="от">
+            <span>от</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
       </div>
 
-      <div class="col-12 sub-title">2. Диапазон изменений, м/с2</div>
+      <div class="m-wrap" data-form="4">
+        <div class="col-12 sub-title">4. Смещение нуля</div>
 
-      <div class="col-6 col-md-4 col-xl-3">
-        <label>
-          <input type="number">
-        </label>
+        <div class="col-12 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
       </div>
 
-      <div class="col-6 col-md-4 col-xl-3">
-        <label>
-          <input type="number">
-        </label>
+      <div class="m-wrap" data-form="5">
+        <div class="col-12 sub-title">5. Диапазон рабочих температур, °С</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="от">
+            <span>от</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
       </div>
 
-      <div class="col-12 sub-title">3. Частотный диапазон измерений, Гц</div>
-      <div class="col-12 sub-title">4. Смещение нуля</div>
-      <div class="col-12 sub-title">5. Диапазон рабочих температур, °С</div>
-      <div class="col-12 sub-title">6. Погрешность</div>
-      <div class="col-12 sub-title">7. Выходной сигнал</div>
-      <div class="col-12 sub-title">8. Напряжение питания, В</div>
-      <div class="col-12 sub-title">9. Ток потребления, мА</div>
-      <div class="col-12 sub-title">10. Тип крепления</div>
-      <div class="col-12 sub-title">11. Тип подключения к кабельной сети</div>
-      <div class="col-12 sub-title">12. Габаритные размеры</div>
-      <div class="col-12 sub-title">13. Масса, г</div>
-      <div class="col-12 sub-title">14. Ресурс, ч</div>
-      <div class="col-12 sub-title">15. Срок службы, лет</div>
-      <div class="col-12 sub-title">16. Прочие требования</div>
+      <div class="m-wrap" data-form="6">
+        <div class="col-12 sub-title">6. Погрешность</div>
+
+        <div class="m-wrap">
+          <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+            <label>
+              <input type="text" placeholder="%">
+              <span>Основная, %</span>
+            </label>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+            <label>
+              <input type="text" placeholder="%">
+              <span>Эксплуатационная, %</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="7">
+        <div class="col-12 sub-title">7. Выходной сигнал</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="мВ">
+            <span>мВ</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="В">
+            <span>В</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="мА">
+            <span>мА</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="мВ/В">
+            <span>мВ/В</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="пКл">
+            <span>пКл</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="1-Wire">
+            <span>1-Wire</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="RS-485">
+            <span>RS-485</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="Другое">
+            <span>Другое</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="8">
+        <div class="col-12 sub-title">8. Напряжение питания, В</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="от">
+            <span>от</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="9">
+        <div class="col-12 sub-title">9. Ток потребления, мА</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="от">
+            <span>от</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="10">
+        <div class="col-12 sub-title">10. Тип крепления</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Тип крепления">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="11">
+        <div class="col-12 sub-title">11. Тип подключения к кабельной сети</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="Тип разъема">
+            <span>Тип разъема</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="Пайка" value="Пайка" style="display: none;">
+            <span>Пайка</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="Другое">
+            <span>Другое</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="12">
+        <div class="col-12 sub-title">12. Габаритные размеры</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Длина">
+            <span>Длина, мм</span>
+          </label>
+        </div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Ширина">
+            <span>Ширина, мм</span>
+          </label>
+        </div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Высота">
+            <span>Высота, мм</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="13">
+        <div class="col-12 sub-title">13. Масса, г</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Масса">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="14">
+        <div class="col-12 sub-title">14. Ресурс, ч</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Ресурс">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="15">
+        <div class="col-12 sub-title">15. Срок службы, лет</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Срок службы">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="16">
+        <div class="col-12 sub-title">16. Прочие требования</div>
+
+        <div class="col-12 quiz__cont-textarea">
+          <textarea placeholder="Прочие требования"></textarea>
+        </div>
+      </div>
 
       <h2 class="col-12 quiz__cont-sec__title def-title">Характеристика рабочей среды</h2>
 
-      <div class="col-12 sub-title">1. Характеристика рабочей среды</div>
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Характеристика рабочей среды</div>
+
+        <div class="col-12 quiz__cont-textarea">
+          <textarea placeholder="Характеристика рабочей среды"></textarea>
+        </div>
+      </div>
 
       <h2 class="col-12 quiz__cont-sec__title def-title">Дополнительные требования</h2>
 
-      <div class="col-12 sub-title">1. Стойкость к спецфакторам</div>
-      <div class="col-12 sub-title">2. Стойкость к внешним воздействующим факторам</div>
-      <div class="col-12 sub-title">3. Требования к материалам</div>
-      <div class="col-12 sub-title">4. Вид приемки</div>
-      <div class="col-12 sub-title">5. Прочие требования</div>
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Стойкость к спецфакторам</div>
+
+        <div class="col-12 quiz__cont-textarea">
+          <textarea placeholder="Характеристика рабочей среды"></textarea>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="2">
+        <div class="col-12 sub-title">2. Стойкость к внешним воздействующим факторам</div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="до">
+            <span>Линейное ускорение, м/с2</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="до">
+            <input type="text" placeholder="(g)">
+            <input type="text" placeholder="до">
+            <span>Вибрация <br> ускорение, м/с2 <br> частота, Гц</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="до">
+            <input type="text" placeholder="(g)">
+            <input type="text" placeholder="до">
+            <span>Удар <br> величина, м/с2 <br> длительность, с</span>
+          </label>
+        </div>
+
+      </div>
+
+      <div class="m-wrap" data-form="3">
+        <div class="col-12 sub-title">3. Требования к материалам</div>
+
+        <div class="col-12 quiz__cont-textarea">
+          <textarea placeholder="Требования к материалам"></textarea>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="4">
+        <div class="col-12 sub-title">4. Вид приемки</div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="ОТК" style="display: none">
+            <span>ОТК</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="ВП МО РФ" style="display: none">
+            <span>ВП МО РФ</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="Другое">
+            <span>Другое</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="5">
+        <div class="col-12 sub-title">5. Прочие требования</div>
+
+        <div class="col-12 quiz__cont-textarea">
+          <textarea placeholder="Прочие требования"></textarea>
+        </div>
+      </div>
 
       <h2 class="col-12 quiz__cont-sec__title def-title">Условия поставки/разработки</h2>
 
-      <div class="col-12 sub-title">1. Партийность</div>
-      <div class="col-12 sub-title">2. Срок поставки/разработки</div>
-      <div class="col-12 sub-title">3. Источник финансирования</div>
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Партийность</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Партийность">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="2">
+        <div class="col-12 sub-title">2. Срок поставки/разработки</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Срок поставки/разработки">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="3">
+        <div class="col-12 sub-title">3. Источник финансирования</div>
+
+        <div class="col-12 col-md-6 col-xl-4 quiz__cont-radio">
+          <label>
+            <input type="radio" name="izmer-vel">
+            <span>Госзаказ</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 quiz__cont-radio">
+          <label>
+            <input type="radio" name="izmer-vel">
+            <span>Собственные средства</span>
+          </label>
+        </div>
+      </div>
 
       <h2 class="col-12 quiz__cont-sec__title def-title">Сведения о заказчике</h2>
 
-      <div class="col-12 sub-title">1. Название предприятия</div>
-      <div class="col-12 sub-title">2. Адрес предприятия</div>
-      <div class="col-12 sub-title">3. Веб-сайт</div>
-      <div class="col-12 sub-title">4. Сфера деятельности</div>
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Название предприятия</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="1. Название предприятия">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="2">
+        <div class="col-12 sub-title">2. Адрес предприятия</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Адрес предприятия">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="3">
+        <div class="col-12 sub-title">3. Веб-сайт</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Веб-сайт">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="4">
+        <div class="col-12 sub-title">4. Сфера деятельности</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Сфера деятельности">
+          </label>
+        </div>
+      </div>
 
       <h2 class="col-12 quiz__cont-sec__title def-title">Контакты для обратной связи</h2>
 
-      <div class="col-12 sub-title">1. Должность</div>
-      <div class="col-12 sub-title">2. ФИО</div>
-      <div class="col-12 sub-title">3. Телефон</div>
-      <div class="col-12 sub-title">4. E-mail</div>
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Должность</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder=" Должность">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="2">
+        <div class="col-12 sub-title">2. ФИО</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="ФИО">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="3">
+        <div class="col-12 sub-title">3. Телефон</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Телефон">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="4">
+        <div class="col-12 sub-title">4. E-mail</div>
+
+        <div class="col-12 quiz__cont-text">
+          <label>
+            <input type="text" placeholder=" E-mail">
+          </label>
+        </div>
+      </div>
 
       <div class="col-12">
         <label class="checkbox-label">
