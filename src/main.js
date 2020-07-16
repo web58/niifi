@@ -283,6 +283,16 @@ jQuery(function($) {
     $(this).addClass('active');
   });
 
+  $('.for-quiz-form').on('click', function () {
+    $('body').css('overflow-y', 'hidden');
+    $('.quiz').fadeIn();
+  });
+
+  $('.quiz__cont-exit, .sub-button').on('click', function () {
+    $('body').css('overflow-y', 'auto');
+    $('.quiz').fadeOut();
+  });
+
   // OFF
 
 
