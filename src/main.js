@@ -230,9 +230,31 @@ jQuery(function($) {
       }
     }
 
+  });
 
+  $('.catalog-side__right-view__item').on('click', function () {
+
+    if ($(this).hasClass('go-to-grid')){
+
+      if ($(this).closest('.catalog-side').hasClass('build-table')){
+
+        $(this).closest('.catalog-side').removeClass('build-table').addClass('build-grid');
+
+      }
+    }
+
+    if ($(this).hasClass('go-to-table')){
+
+      if ($(this).closest('.catalog-side').hasClass('build-grid')){
+
+        $(this).closest('.catalog-side').removeClass('build-grid').addClass('build-table');
+
+      }
+    }
 
   });
+
+
 
   // OFF
 
@@ -295,5 +317,10 @@ jQuery(function($) {
 
   // OFF
 
+  // RANGE FILTER ON
+
+
+
+  // OFF
 
 });

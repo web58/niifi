@@ -212,7 +212,6 @@ and (min-width: 1200px){
   }
 
   // tries product page
-
   .try-product{
 
     &__wrap{
@@ -230,7 +229,6 @@ and (min-width: 1200px){
   }
 
   // pezo page
-
   .pezo{
 
     &__left{
@@ -262,7 +260,6 @@ and (min-width: 1200px){
   }
 
   // measuring page
-
   .measuring{
 
     &__view{
@@ -306,6 +303,9 @@ and (min-width: 1200px){
             &-buttons{
               min-width: 175px;
               padding-left: 15px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
 
               .def-button.order{
                 position: absolute;
@@ -319,6 +319,83 @@ and (min-width: 1200px){
       }
     }
   }
+
+  // system podcatalog page with side bar
+  .catalog-side{
+
+    &__left{
+
+    }
+
+    &__right{
+
+      &-view{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+      }
+
+
+
+    }
+
+    &__products{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item{
+      max-width: 33%;
+      width: 33%;
+      margin: 0 0 40px;
+
+      &-link{
+
+      }
+    }
+
+    &.build-table{
+
+      .catalog-side__item{
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 45px;
+
+        &-link{
+          display: flex;
+        }
+
+        &__img{
+          width: 350px;
+          min-width: 350px;
+          margin-right: 30px;
+          margin-bottom: 0;
+        }
+
+        &-content{
+          position: relative;
+          display: flex;
+          padding-bottom: 55px;
+
+          &__buttons{
+            min-width: 175px;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .def-button.order{
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media screen
