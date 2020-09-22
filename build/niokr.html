@@ -64,8 +64,8 @@
       <div class="header__title col-lg-4">Контрольно-измерительные<br> приборы, системы и пьезотехники</div>
 
       <div class="header__buttons col-12 col-md-6 col-lg-5">
-        <div class="header__buttons-item for-order-form">Скачать каталог</div>
-        <div class="header__buttons-item for-quiz-form">Заказать изделие</div>
+        <div class="header__buttons-item for-download-form" data-form-button="Заголовок страницы">Скачать каталог</div>
+        <div class="header__buttons-item for-quiz-form" data-form-button="Заголовок страницы">Заказать изделие</div>
       </div>
 
       <div class="header__space col-12 col-md-3 col-lg-2">
@@ -129,7 +129,7 @@
         </div>
 
         <div class="col-12 col-xl-2 niokr__button">
-          <div class="def-button for-order-form">Заявка на <br> внедрение НИОКР</div>
+          <div class="def-button for-order-form" data-form-button="НИОКР">Заявка на <br> внедрение НИОКР</div>
         </div>
 
       </div>
@@ -169,7 +169,7 @@
         </div>
 
         <div class="col-12 col-xl-2 niokr__button">
-          <div class="def-button for-order-form">Заявка на <br> внедрение НИОКР</div>
+          <div class="def-button for-order-form" data-form-button="НИОКР">Заявка на <br> внедрение НИОКР</div>
         </div>
 
       </div>
@@ -289,6 +289,7 @@
     <div class="popup-form__cont-exit"></div>
     <form>
       <div class="popup-form__title">Заказать звонок</div>
+      <input class="popup-form-form-order-hidden" type="hidden" value="значение с кнопки">
       <label class="input-label">
         <span>Имя</span>
         <input type="text">
@@ -319,6 +320,8 @@
     <div class="popup-form__cont-exit"></div>
     <form>
       <div class="popup-form__title">Заказать звонок</div>
+
+      <input class="popup-form-form-comment-hidden" type="hidden" value="значение с кнопки">
 
       <label class="input-label">
         <span>Имя</span>
@@ -357,16 +360,49 @@
   </div>
 </div>
 
+<div class="popup-form form-download">
+  <div class="popup-form__back"></div>
+  <div class="popup-form__cont">
+    <div class="popup-form__cont-exit"></div>
+    <form>
+      <div class="popup-form__title">Заказать звонок</div>
+      <input class="popup-form-form-download-hidden" type="hidden" value="значение с кнопки">
+      <label class="input-label">
+        <span>Имя</span>
+        <input type="text" required>
+      </label>
+      <label class="input-label">
+        <span>Телефон</span>
+        <input type="tel" placeholder="Телефон" required>
+      </label>
+      <label class="input-label">
+        <span>Телефон</span>
+        <input type="email" placeholder="Email">
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" checked>
+        <span>Отправляя свои данные, я согласен(-на) с Политикой конфиденциальности сайта.</span>
+      </label>
+      <input type="submit" class="sub-button" value="Отправить">
+    </form>
+    <div class="popup-form__cont-thanks">
+      <div class="popup-form__cont-thanks-title">Спасибо за заявку!</div>
+      <div class="popup-form__cont-thanks-img">
+        <img src="./files/imgs/form.jpg" alt="">
+      </div>
+      <div class="popup-form__cont-thanks-text">Наш менеджер скоро с Вами свяжется.</div>
+    </div>
+  </div>
+</div>
+
 <div class="quiz">
   <div class="quiz__cont container">
 
     <div class="quiz__cont-exit"></div>
 
-    <div class="row">
-      <h2 class="col-12 def-title">Опросный лист на средства измерения линейных, вибрационных или ударных ускорений</h2>
-    </div>
+    <form class="row quiz__cont-form">
 
-    <form class="row">
+      <h2 class="col-12 def-title">Опросный лист на средства измерения линейных, вибрационных или ударных ускорений</h2>
 
       <h2 class="col-12 quiz__cont-sec__title def-title">Основные технические характеристики</h2>
 
@@ -906,7 +942,16 @@
 
     </form>
 
+    <div class="popup-form__cont-thanks">
+      <div class="popup-form__cont-thanks-title">Спасибо за заявку!</div>
+      <div class="popup-form__cont-thanks-img">
+        <img src="./files/imgs/form.jpg" alt="">
+      </div>
+      <div class="popup-form__cont-thanks-text">Наш менеджер скоро с Вами свяжется.</div>
+    </div>
+
   </div>
+
 </div>
 
 <!--<script defer src="./files/libs/jquery/jquery-3.3.1.min.js"></script>-->

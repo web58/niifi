@@ -67,8 +67,8 @@
       <div class="header__title col-lg-4">Контрольно-измерительные<br> приборы, системы и пьезотехники</div>
 
       <div class="header__buttons col-12 col-md-6 col-lg-5">
-        <div class="header__buttons-item for-order-form">Скачать каталог</div>
-        <div class="header__buttons-item for-quiz-form">Заказать изделие</div>
+        <div class="header__buttons-item for-download-form" data-form-button="Заголовок страницы">Скачать каталог</div>
+        <div class="header__buttons-item for-quiz-form" data-form-button="Заголовок страницы">Заказать изделие</div>
       </div>
 
       <div class="header__space col-12 col-md-3 col-lg-2">
@@ -131,16 +131,131 @@
 
           <div class="catalog-side__left-filters">
 
-            <div class="catalog-side__left-filters__title">Фильтрация</div>
+            <div class="catalog-side__left-filters__title">
+              <span>Фильтрация</span>
+              <span class="catalog-side__left-filters__title-arrow"></span>
+            </div>
 
-            <div class="catalog-side__left-filters__radio"></div>
+            <div class="filter-block catalog-side__left-filters__radio">
 
-            <div class="catalog-side__left-filters__range">
+              <div class="catalog-side__left-filters__subtitle">Измеряемая величина</div>
 
-              <p>
-                <label for="amount">Price range:</label>
-                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-              </p>
+              <label>
+                <input type="radio" name="izm-vel" value="линейное ускорение">
+                <span>линейное ускорение</span>
+              </label>
+
+              <label>
+                <input type="radio" name="izm-vel" value="вибрационное ускорение">
+                <span>вибрационное ускорение</span>
+              </label>
+
+              <label>
+                <input type="radio" name="izm-vel" value="ударное ускорение">
+                <span>ударное ускорение</span>
+              </label>
+
+            </div>
+
+            <div class="filter-block catalog-side__left-filters__range">
+
+              <div class="catalog-side__left-filters__subtitle">Диапазон изменений, м/с2</div>
+
+              <label>
+                <span>от</span>
+                <input type="number" placeholder="10 500 000">
+              </label>
+
+              <label>
+                <span>до</span>
+                <input type="text" placeholder="60 000 000">
+              </label>
+
+            </div>
+
+            <div class="filter-block catalog-side__left-filters__check">
+
+              <div class="catalog-side__left-filters__subtitle">Выходной сигнал</div>
+
+              <label>
+                <input type="checkbox">
+                <span>мВ</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span>В</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span>мА</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span>мВ/В</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span>пКл</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span>1-Wire</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span>RS-485</span>
+              </label>
+
+              <label>
+                <input type="checkbox">
+                <span>Другое</span>
+              </label>
+
+            </div>
+
+            <div class="filter-block catalog-side__left-filters__range">
+
+              <div class="catalog-side__left-filters__subtitle">Основная погрешность, %</div>
+
+              <label>
+                <span>от</span>
+                <input type="number" placeholder="10 500 000">
+              </label>
+
+              <label>
+                <span>до</span>
+                <input type="text" placeholder="60 000 000">
+              </label>
+
+            </div>
+
+            <div class="filter-block catalog-side__left-filters__range">
+
+              <div class="catalog-side__left-filters__subtitle">Температурный диапазон, °С</div>
+
+              <label>
+                <span>от</span>
+                <input type="number" placeholder="10 500 000">
+              </label>
+
+              <label>
+                <span>до</span>
+                <input type="text" placeholder="60 000 000">
+              </label>
+
+            </div>
+
+            <div class="filter-block catalog-side__left-filters__buttons">
+
+              <input type="submit" class="def-button" value="Применить">
+
+              <button class="def-button catalog-side__left-filters__buttons-clear">Очистить</button>
 
             </div>
 
@@ -160,7 +275,7 @@
 
             <div class="catalog-side__item">
 
-              <a href="#" class="catalog-side__item-link">
+              <div class="catalog-side__item-link">
 
                 <div class="catalog-side__item__img">
                   <img src="./files/imgs/sys.jpg" alt="">
@@ -185,21 +300,21 @@
 
                   <div class="catalog-side__item-content__buttons">
 
-                    <div class="def-button order for-order-form">Заказать</div>
-                    <div class="def-button more">Подробнее</div>
-                    <div class="def-button question for-comment-form">Задать вопрос специалисту</div>
+                    <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                    <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                    <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
 
                   </div>
 
                 </div>
 
-              </a>
+              </div>
 
             </div>
 
             <div class="catalog-side__item">
 
-              <a href="#" class="catalog-side__item-link">
+              <div class="catalog-side__item-link">
 
                 <div class="catalog-side__item__img">
                   <img src="./files/imgs/sys.jpg" alt="">
@@ -224,21 +339,21 @@
 
                   <div class="catalog-side__item-content__buttons">
 
-                    <div class="def-button order for-order-form">Заказать</div>
-                    <div class="def-button more">Подробнее</div>
-                    <div class="def-button question for-comment-form">Задать вопрос специалисту</div>
+                    <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                    <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                    <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
 
                   </div>
 
                 </div>
 
-              </a>
+              </div>
 
             </div>
 
             <div class="catalog-side__item">
 
-              <a href="#" class="catalog-side__item-link">
+              <div class="catalog-side__item-link">
 
                 <div class="catalog-side__item__img">
                   <img src="./files/imgs/sys.jpg" alt="">
@@ -263,21 +378,21 @@
 
                   <div class="catalog-side__item-content__buttons">
 
-                    <div class="def-button order for-order-form">Заказать</div>
-                    <div class="def-button more">Подробнее</div>
-                    <div class="def-button question for-comment-form">Задать вопрос специалисту</div>
+                    <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                    <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                    <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
 
                   </div>
 
                 </div>
 
-              </a>
+              </div>
 
             </div>
 
             <div class="catalog-side__item">
 
-              <a href="#" class="catalog-side__item-link">
+              <div class="catalog-side__item-link">
 
                 <div class="catalog-side__item__img">
                   <img src="./files/imgs/sys.jpg" alt="">
@@ -302,21 +417,21 @@
 
                   <div class="catalog-side__item-content__buttons">
 
-                    <div class="def-button order for-order-form">Заказать</div>
-                    <div class="def-button more">Подробнее</div>
-                    <div class="def-button question for-comment-form">Задать вопрос специалисту</div>
+                    <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                    <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                    <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
 
                   </div>
 
                 </div>
 
-              </a>
+              </div>
 
             </div>
 
             <div class="catalog-side__item">
 
-              <a href="#" class="catalog-side__item-link">
+              <div class="catalog-side__item-link">
 
                 <div class="catalog-side__item__img">
                   <img src="./files/imgs/sys.jpg" alt="">
@@ -341,15 +456,15 @@
 
                   <div class="catalog-side__item-content__buttons">
 
-                    <div class="def-button order for-order-form">Заказать</div>
-                    <div class="def-button more">Подробнее</div>
-                    <div class="def-button question for-comment-form">Задать вопрос специалисту</div>
+                    <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                    <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                    <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
 
                   </div>
 
                 </div>
 
-              </a>
+              </div>
 
             </div>
 
@@ -478,6 +593,7 @@
     <div class="popup-form__cont-exit"></div>
     <form>
       <div class="popup-form__title">Заказать звонок</div>
+      <input class="popup-form-form-order-hidden" type="hidden" value="значение с кнопки">
       <label class="input-label">
         <span>Имя</span>
         <input type="text">
@@ -508,6 +624,8 @@
     <div class="popup-form__cont-exit"></div>
     <form>
       <div class="popup-form__title">Заказать звонок</div>
+
+      <input class="popup-form-form-comment-hidden" type="hidden" value="значение с кнопки">
 
       <label class="input-label">
         <span>Имя</span>
@@ -546,16 +664,49 @@
   </div>
 </div>
 
+<div class="popup-form form-download">
+  <div class="popup-form__back"></div>
+  <div class="popup-form__cont">
+    <div class="popup-form__cont-exit"></div>
+    <form>
+      <div class="popup-form__title">Заказать звонок</div>
+      <input class="popup-form-form-download-hidden" type="hidden" value="значение с кнопки">
+      <label class="input-label">
+        <span>Имя</span>
+        <input type="text" required>
+      </label>
+      <label class="input-label">
+        <span>Телефон</span>
+        <input type="tel" placeholder="Телефон" required>
+      </label>
+      <label class="input-label">
+        <span>Телефон</span>
+        <input type="email" placeholder="Email">
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" checked>
+        <span>Отправляя свои данные, я согласен(-на) с Политикой конфиденциальности сайта.</span>
+      </label>
+      <input type="submit" class="sub-button" value="Отправить">
+    </form>
+    <div class="popup-form__cont-thanks">
+      <div class="popup-form__cont-thanks-title">Спасибо за заявку!</div>
+      <div class="popup-form__cont-thanks-img">
+        <img src="./files/imgs/form.jpg" alt="">
+      </div>
+      <div class="popup-form__cont-thanks-text">Наш менеджер скоро с Вами свяжется.</div>
+    </div>
+  </div>
+</div>
+
 <div class="quiz">
   <div class="quiz__cont container">
 
     <div class="quiz__cont-exit"></div>
 
-    <div class="row">
-      <h2 class="col-12 def-title">Опросный лист на средства измерения линейных, вибрационных или ударных ускорений</h2>
-    </div>
+    <form class="row quiz__cont-form">
 
-    <form class="row">
+      <h2 class="col-12 def-title">Опросный лист на средства измерения линейных, вибрационных или ударных ускорений</h2>
 
       <h2 class="col-12 quiz__cont-sec__title def-title">Основные технические характеристики</h2>
 
@@ -1095,7 +1246,16 @@
 
     </form>
 
+    <div class="popup-form__cont-thanks">
+      <div class="popup-form__cont-thanks-title">Спасибо за заявку!</div>
+      <div class="popup-form__cont-thanks-img">
+        <img src="./files/imgs/form.jpg" alt="">
+      </div>
+      <div class="popup-form__cont-thanks-text">Наш менеджер скоро с Вами свяжется.</div>
+    </div>
+
   </div>
+
 </div>
 
 <!--<script defer src="./files/libs/jquery/jquery-3.3.1.min.js"></script>-->

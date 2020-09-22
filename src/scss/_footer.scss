@@ -283,6 +283,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     position: relative;
+    min-height: 100%;
 
     .def-title{
       font-size: 18px;
@@ -572,6 +573,34 @@
         height: 50px;
         line-height: 48px;
       }
+    }
+  }
+
+  .popup-form__cont-thanks{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &-title{
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    &-img{
+      margin: 0 auto 35px;
+
+      img{
+        margin: 0 auto;
+      }
+    }
+
+    &-text{
+      font-size: 13px;
+      text-align: center;
     }
   }
 }

@@ -254,6 +254,15 @@ jQuery(function($) {
 
   });
 
+  // CATALOG FILTER TITLE ARROW ON
+  if (window.matchMedia("(max-width: 1199px)").matches) {
+    $('.catalog-side__left-filters__title').on('click', function () {
+      $(this).toggleClass('diz-active');
+      $('.filter-block').fadeToggle(10);
+    });
+  }
+  // OFF
+
 
 
   // OFF
@@ -262,23 +271,39 @@ jQuery(function($) {
 
   $('.header__buttons-item.for-order-form, .def-button.for-order-form, .sub-button.for-order-form').on('click', function () {
 
+    var hiddenValue = $(this).attr('data-form-button');
+    $('.popup-form-form-order-hidden').val(hiddenValue);
     $('.popup-form.form-order').fadeIn();
+
+  });
+
+  $('.header__buttons-item.for-download-form, .def-button.for-download-form, .sub-button.for-download-form').on('click', function () {
+
+    var hiddenValue = $(this).attr('data-form-button');
+    $('.popup-form-form-download-hidden').val(hiddenValue);
+    $('.popup-form.form-download').fadeIn();
 
   });
 
   $('.header__buttons-item.for-comment-form, .def-button.for-comment-form, .sub-button.for-comment-form').on('click', function () {
 
+    var hiddenValue = $(this).attr('data-form-button');
+    $('.popup-form-form-comment-hidden').val(hiddenValue);
     $('.popup-form.form-comment').fadeIn();
 
   });
 
   $('.popup-form__cont-exit, .popup-form__back').on('click', function () {
 
-    $('.popup-form').fadeOut('300', function() {
-      $('.popup-form').removeClass('thanks');
+    $('.popup-form').fadeOut('100', function() {
+      setTimeout(function () {
+        $('.popup-form').removeClass('thanks');
+      }, 1000);
     });
 
   });
+
+    // ОТПРАВКА ФОРМЫ - ОТОБРАЖЕНИЕ БЛАГОДАРНОСТИ ON
 
   $('.popup-form .sub-button').on('click', function (evt) {
 
@@ -286,6 +311,8 @@ jQuery(function($) {
     $(this).closest('.popup-form').addClass('thanks')
 
   });
+
+    // OFF
 
   $('input[type="file"]').change(function() {
     var file = $('input[type="file"]')[0].files[0].name;
@@ -297,7 +324,7 @@ jQuery(function($) {
 
   // OFF
 
-  // FORM PAGE ON
+  // FORM QUIZ PAGE ON
 
   $('.quiz__cont-var label').on('click', function () {
     $(this).closest('.quiz__cont-var').siblings().find('input').val('');
@@ -310,10 +337,26 @@ jQuery(function($) {
     $('.quiz').fadeIn();
   });
 
-  $('.quiz__cont-exit, .sub-button').on('click', function () {
+  $('.quiz__cont-exit').on('click', function () {
     $('body').css('overflow-y', 'auto');
-    $('.quiz').fadeOut();
+    $('.quiz').fadeOut(300, function () {
+      $('.quiz__cont-form').fadeIn();
+      $('.quiz .popup-form__cont-thanks').fadeOut();
+    });
   });
+
+    // ОТПРАВКА КВИЗА - ОТОБРАЖЕНИЕ БЛАГОДАРНОСТИ ON
+
+  $('.quiz .sub-button').on('click', function (evt) {
+
+    evt.preventDefault();
+    $(this).closest('.quiz__cont-form').fadeOut(300, function () {
+      $('.popup-form__cont-thanks').fadeIn(300);
+    })
+
+  });
+
+    // OFF
 
   // OFF
 
