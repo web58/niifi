@@ -713,10 +713,19 @@
         margin-right: 0;
       }
       padding-left: 25px;
-      background-image: url('./files/imgs/icons/login.svg');
       background-repeat: no-repeat;
       background-size: 14px;
       background-position: 0 0;
+
+      &:first-child{
+        background-image: url('./files/imgs/icons/grid.svg');
+        background-position: 0 2px;
+      }
+
+      &:last-child{
+        background-image: url('./files/imgs/icons/list.svg');
+        background-position: 0 3px;
+      }
     }
   }
 
@@ -1182,10 +1191,18 @@
           margin-right: 0;
         }
         padding-left: 25px;
-        background-image: url('./files/imgs/icons/login.svg');
         background-repeat: no-repeat;
         background-size: 14px;
-        background-position: 0 0;
+
+        &:first-child{
+          background-image: url('./files/imgs/icons/grid.svg');
+          background-position: 0 2px;
+        }
+
+        &:last-child{
+          background-image: url('./files/imgs/icons/list.svg');
+          background-position: 0 3px;
+        }
       }
     }
 
