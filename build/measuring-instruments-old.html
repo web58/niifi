@@ -1,0 +1,1224 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./files/libs/grid/grid.min.css">
+  <link rel="stylesheet" href="./files/libs/OwlCarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./files/libs/slick/slick.css">
+  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="shortcut icon" href="./files/imgs/favicon.ico" type="image/x-icon">
+
+  <title>НИФИ - Средства измерения абсолютных давлений</title>
+
+</head>
+<body id="page-body">
+
+<style>
+
+  #preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-color: white;
+  }
+
+  #preloader img {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  body.visible #preloader{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+  }
+
+  body.hidden #preloader {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0s 1s, opacity 1s linear;
+    height: 0;
+    width: 0;
+
+  }
+
+</style>
+
+<div id="preloader" class="visible">
+  <img src="./files/imgs/icons/logo.png" alt="" style="max-width: 100px;">
+</div>
+
+<script>
+  var removePreloader = function (ms) {
+    return window.setTimeout(function () {
+      document.body.classList.add('hidden');
+      document.body.classList.remove('visible');
+    }, ms);
+  };
+
+  document.body.classList.add('visible');
+  var defaultRemove = removePreloader(3000);
+
+  window.onload = function () {
+    clearTimeout(defaultRemove);
+    removePreloader(0);
+  }
+</script>
+
+<header class="header" id="page-header">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="header__burger col-3 col-md-2 col-lg-1"><div class="header__burger-wrap"><div class="header__burger-wrap_line"></div></div></div>
+
+      <div class="header__nav col-12 col-lg-4">
+        <nav>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="./404.html">Новости 404</a></li>
+            <li><a href="./search.html">ПОИСК О компании</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Руководство</a></li>
+            <li><a href="#">Лицензии</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Противодействие коррупции</a></li>
+            <li><a href="#">Обязательная информация</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__navigation col-12">
+        <ul>
+          <li><a href="./system-catalog.html">Системы</a></li>
+          <li><a href="./sensors-catalog.html">Датчики</a></li>
+          <li><a href="./elements-catalog.html">Пьезоэлементы</a></li>
+          <li><a href="./product-try.html">Испытания</a></li>
+          <li><a href="./niokr.html">НИОКР</a></li>
+          <li><a href="./manufacture-technology.html">Производство и технологии</a></li>
+          <li><a href="#" class="active">География продаж</a></li>
+        </ul>
+      </div>
+      
+      <div class="header__logo col-6 col-md-3">
+        <a href="/"><img src="./files/imgs/icons/logo.png" alt=""></a>
+      </div>
+
+      <div class="header__title col-lg-4">Контрольно-измерительные<br> приборы, системы и пьезотехники</div>
+
+      <div class="header__buttons col-12 col-md-6 col-lg-5">
+        <div class="header__buttons-item for-download-form" data-form-button="Заголовок страницы">Скачать каталог</div>
+        <div class="header__buttons-item for-quiz-form" data-form-button="Заголовок страницы">Заказать изделие</div>
+      </div>
+
+      <div class="header__space col-12 col-md-3 col-lg-2">
+        <a href="#">
+          <img src="./files/imgs/icons/roscosmos.png" alt="">
+          <img src="./files/imgs/icons/mass.png" alt="" style="display: none;">
+        </a>
+      </div>
+
+      <div class="header__personal col-3 col-md-2 col-lg-2">
+        <div class="header__personal-login">
+          <a href="#"><span>Войти</span></a>
+        </div>
+        <div class="header__personal-registration">
+          <a href="#"><span>Регистрация</span></a>
+        </div>
+        <div class="header__personal-search" data-class="active">
+          <label>
+            <input type="text" placeholder="Поиск">
+          </label>
+        </div>
+      </div>
+
+      <div class="header__contacts col-12 col-md-6 col-lg-4">
+        <a class="header__contacts-phone" href="#">+7 (8412) 56-08-20</a>
+        <a class="header__contacts-mail" href="#">info@nifi.ru</a>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<main class="main">
+
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p><a href="/">Главная</a><span>/</span><a href="#">Датчики</a><span>/</span><strong>Средства измерения абсолютных давлений</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="measuring build-grid">
+
+    <div class="container">
+
+      <div class="row">
+
+        <h2 class="col-12 def-title"><a href="#">Средства измерения абсолютных давлений</a></h2>
+
+      </div>
+
+      <div class="row measuring__view">
+        <div class="col-12">
+          <div class="measuring__view-item go-to-grid">Просмотреть как сетку</div>
+          <div class="measuring__view-item go-to-table">Просмотреть как список</div>
+        </div>
+      </div>
+
+
+      <div class="row measuring__list">
+
+        <div class="col-12 col-xl-4 measuring__list-item">
+
+          <div class="inner">
+
+            <div class="measuring__list-item__img">
+              <img src="./files/imgs/111.png" alt="">
+            </div>
+
+            <div class="measuring__list-item__content">
+
+              <div class="measuring__list-item__content-wrap">
+                <div class="measuring__list-item__content-title">Преобразователь первичный абсолютного давления Вт 227</div>
+                <div class="measuring__list-item__content-text">
+                  Основные характеристики <br>
+                  Диапазон измерений: 00000000 <br>
+                  Температурный диапазон: 00000000 <br>
+                  Погрешность: 00000000 <br>
+                </div>
+              </div>
+
+              <div class="measuring__list-item__content-buttons">
+
+                <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-12 col-xl-4 measuring__list-item">
+
+          <div class="inner">
+
+            <div class="measuring__list-item__img">
+              <img src="./files/imgs/111.png" alt="">
+            </div>
+
+            <div class="measuring__list-item__content">
+
+              <div class="measuring__list-item__content-wrap">
+                <div class="measuring__list-item__content-title">Преобразователь первичный абсолютного давления Вт 227</div>
+                <div class="measuring__list-item__content-text">
+                  Основные характеристики <br>
+                  Диапазон измерений: 00000000 <br>
+                  Температурный диапазон: 00000000 <br>
+                  Погрешность: 00000000 <br>
+                </div>
+              </div>
+
+              <div class="measuring__list-item__content-buttons">
+
+                <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-12 col-xl-4 measuring__list-item">
+
+          <div class="inner">
+
+            <div class="measuring__list-item__img">
+              <img src="./files/imgs/111.png" alt="">
+            </div>
+
+            <div class="measuring__list-item__content">
+
+              <div class="measuring__list-item__content-wrap">
+                <div class="measuring__list-item__content-title">Преобразователь первичный абсолютного давления Вт 227</div>
+                <div class="measuring__list-item__content-text">
+                  Основные характеристики <br>
+                  Диапазон измерений: 00000000 <br>
+                  Температурный диапазон: 00000000 <br>
+                  Погрешность: 00000000 <br>
+                </div>
+              </div>
+
+              <div class="measuring__list-item__content-buttons">
+
+                <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-12 col-xl-4 measuring__list-item">
+
+          <div class="inner">
+
+            <div class="measuring__list-item__img">
+              <img src="./files/imgs/111.png" alt="">
+            </div>
+
+            <div class="measuring__list-item__content">
+
+              <div class="measuring__list-item__content-wrap">
+                <div class="measuring__list-item__content-title">Преобразователь первичный абсолютного давления Вт 227</div>
+                <div class="measuring__list-item__content-text">
+                  Основные характеристики <br>
+                  Диапазон измерений: 00000000 <br>
+                  Температурный диапазон: 00000000 <br>
+                  Погрешность: 00000000 <br>
+                </div>
+              </div>
+
+              <div class="measuring__list-item__content-buttons">
+
+                <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-12 col-xl-4 measuring__list-item">
+
+          <div class="inner">
+
+            <div class="measuring__list-item__img">
+              <img src="./files/imgs/111.png" alt="">
+            </div>
+
+            <div class="measuring__list-item__content">
+
+              <div class="measuring__list-item__content-wrap">
+                <div class="measuring__list-item__content-title">Преобразователь первичный абсолютного давления Вт 227</div>
+                <div class="measuring__list-item__content-text">
+                  Основные характеристики <br>
+                  Диапазон измерений: 00000000 <br>
+                  Температурный диапазон: 00000000 <br>
+                  Погрешность: 00000000 <br>
+                </div>
+              </div>
+
+              <div class="measuring__list-item__content-buttons">
+
+                <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-12 col-xl-4 measuring__list-item">
+
+          <div class="inner">
+
+            <div class="measuring__list-item__img">
+              <img src="./files/imgs/111.png" alt="">
+            </div>
+
+            <div class="measuring__list-item__content">
+
+              <div class="measuring__list-item__content-wrap">
+                <div class="measuring__list-item__content-title">Преобразователь первичный абсолютного давления Вт 227</div>
+                <div class="measuring__list-item__content-text">
+                  Основные характеристики <br>
+                  Диапазон измерений: 00000000 <br>
+                  Температурный диапазон: 00000000 <br>
+                  Погрешность: 00000000 <br>
+                </div>
+              </div>
+
+              <div class="measuring__list-item__content-buttons">
+
+                <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-12 col-xl-4 measuring__list-item">
+
+          <div class="inner">
+
+            <div class="measuring__list-item__img">
+              <img src="./files/imgs/111.png" alt="">
+            </div>
+
+            <div class="measuring__list-item__content">
+
+              <div class="measuring__list-item__content-wrap">
+                <div class="measuring__list-item__content-title">Преобразователь первичный абсолютного давления Вт 227</div>
+                <div class="measuring__list-item__content-text">
+                  Основные характеристики <br>
+                  Диапазон измерений: 00000000 <br>
+                  Температурный диапазон: 00000000 <br>
+                  Погрешность: 00000000 <br>
+                </div>
+              </div>
+
+              <div class="measuring__list-item__content-buttons">
+
+                <div class="def-button order for-order-form" data-form-button="Заказать - название товара">Заказать</div>
+                <a href="/piezo-materials.html" class="def-button more">Подробнее</a>
+                <div class="def-button question for-comment-form" data-form-button="задать вопрос - название товара">Задать вопрос специалисту</div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <section class="news">
+    <div class="container">
+      <div class="row">
+        <h2 class="col-12 def-title"><a href="#">Новости</a></h2>
+      </div>
+      <div class="row">
+        <div class="col-12 news__slider">
+
+          <a href="#" class="news__slider-item">
+            <div class="news__slider-item__img">
+              <img src="./files/imgs/001.png" alt="">
+            </div>
+            <div class="news__slider-item__title">Обновлен раздел "Вакансии"</div>
+            <div class="news__slider-item__button">Подробнее ➞</div>
+          </a>
+
+          <a href="#" class="news__slider-item">
+            <div class="news__slider-item__img">
+              <img src="./files/imgs/002.png" alt="">
+            </div>
+            <div class="news__slider-item__title">Молодежь приглашают на «Орбиту»</div>
+            <div class="news__slider-item__button">Подробнее ➞</div>
+          </a>
+
+          <a href="#" class="news__slider-item">
+            <div class="news__slider-item__img">
+              <img src="./files/imgs/003.png" alt="">
+            </div>
+            <div class="news__slider-item__title">Созданы датчики повышенной точности</div>
+            <div class="news__slider-item__button">Подробнее ➞</div>
+          </a>
+
+          <a href="#" class="news__slider-item">
+            <div class="news__slider-item__img">
+              <img src="./files/imgs/004.png" alt="">
+            </div>
+            <div class="news__slider-item__title">Делаем звезды ближе</div>
+            <div class="news__slider-item__button">Подробнее ➞</div>
+          </a>
+
+          <a href="#" class="news__slider-item">
+            <div class="news__slider-item__img">
+              <img src="./files/imgs/001.png" alt="">
+            </div>
+            <div class="news__slider-item__title">Обновлен раздел "Вакансии"</div>
+            <div class="news__slider-item__button">Подробнее ➞</div>
+          </a>
+
+        </div>
+
+        <div class="col-12 all-slider-arrows">
+          <ul>
+            <li class="prev-arrow">
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+              <g>
+                  <path d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734
+                    L107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8
+                    C342.889,227.058,342.889,216.255,336.226,209.591z"/>
+                </g>
+              </svg>
+            </li>
+            <li class="next-arrow">
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+              <g>
+                  <path d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734
+                    L107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8
+                    C342.889,227.058,342.889,216.255,336.226,209.591z"/>
+                </g>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 footer__logo">
+        <a href="/"><img src="./files/imgs/icons/logo.png" alt=""></a>
+      </div>
+      <div class="col-12 footer__space">
+        <a href="#">
+          <img src="./files/imgs/icons/roscosmos.png" alt="">
+          <img src="./files/imgs/icons/mass.png" alt="" style="display: none;">
+        </a>
+      </div>
+      <div class="col-12 footer__phone">
+        <a href="#">+7 (8412) 56-08-20</a>
+      </div>
+      <div class="col-12 footer__mail">
+        <a href="#">info@nifi.ru</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="popup-form form-order">
+  <div class="popup-form__back"></div>
+  <div class="popup-form__cont">
+    <div class="popup-form__cont-exit"></div>
+    <form>
+      <div class="popup-form__title">Заказать звонок</div>
+      <input class="popup-form-form-order-hidden" type="hidden" value="значение с кнопки">
+      <label class="input-label">
+        <span>Имя</span>
+        <input type="text">
+      </label>
+      <label class="input-label">
+        <span>Телефон</span>
+        <input type="tel" placeholder="Телефон">
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" checked>
+        <span>Отправляя свои данные, я согласен(-на) с Политикой конфиденциальности сайта.</span>
+      </label>
+      <input type="submit" class="sub-button" value="Отправить">
+    </form>
+    <div class="popup-form__cont-thanks">
+      <div class="popup-form__cont-thanks-title">Спасибо за заявку!</div>
+      <div class="popup-form__cont-thanks-img">
+        <img src="./files/imgs/form.jpg" alt="">
+      </div>
+      <div class="popup-form__cont-thanks-text">Наш менеджер скоро с Вами свяжется.</div>
+    </div>
+  </div>
+</div>
+
+<div class="popup-form form-comment">
+  <div class="popup-form__back"></div>
+  <div class="popup-form__cont">
+    <div class="popup-form__cont-exit"></div>
+    <form>
+      <div class="popup-form__title">Заказать звонок</div>
+
+      <input class="popup-form-form-comment-hidden" type="hidden" value="значение с кнопки">
+
+      <label class="input-label">
+        <span>Имя</span>
+        <input type="text">
+      </label>
+
+      <label class="input-label">
+        <span>Телефон</span>
+        <input type="tel" placeholder="Телефон">
+      </label>
+
+      <label class="textarea-label">
+        <span>Текст комментария</span>
+        <textarea></textarea>
+      </label>
+
+      <label class="input-label">
+        <input type="file" placeholder="Прикрепить файл...">
+        <span>Прикрепить файл...</span>
+      </label>
+
+      <label class="checkbox-label">
+        <input type="checkbox" checked>
+        <span>Отправляя свои данные, я согласен(-на) с Политикой конфиденциальности сайта.</span>
+      </label>
+
+      <input type="submit" class="sub-button" value="Отправить">
+    </form>
+    <div class="popup-form__cont-thanks">
+      <div class="popup-form__cont-thanks-title">Спасибо за заявку!</div>
+      <div class="popup-form__cont-thanks-img">
+        <img src="./files/imgs/form.jpg" alt="">
+      </div>
+      <div class="popup-form__cont-thanks-text">Наш менеджер скоро с Вами свяжется.</div>
+    </div>
+  </div>
+</div>
+
+<div class="popup-form form-download">
+  <div class="popup-form__back"></div>
+  <div class="popup-form__cont">
+    <div class="popup-form__cont-exit"></div>
+    <form>
+      <div class="popup-form__title">Заказать звонок</div>
+      <input class="popup-form-form-download-hidden" type="hidden" value="значение с кнопки">
+      <label class="input-label">
+        <span>Имя</span>
+        <input type="text" required>
+      </label>
+      <label class="input-label">
+        <span>Телефон</span>
+        <input type="tel" placeholder="Телефон" required>
+      </label>
+      <label class="input-label">
+        <span>Телефон</span>
+        <input type="email" placeholder="Email">
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" checked>
+        <span>Отправляя свои данные, я согласен(-на) с Политикой конфиденциальности сайта.</span>
+      </label>
+      <input type="submit" class="sub-button" value="Отправить">
+    </form>
+    <div class="popup-form__cont-thanks">
+      <div class="popup-form__cont-thanks-title">Спасибо за заявку!</div>
+      <div class="popup-form__cont-thanks-img">
+        <img src="./files/imgs/form.jpg" alt="">
+      </div>
+      <div class="popup-form__cont-thanks-text">Наш менеджер скоро с Вами свяжется.</div>
+    </div>
+  </div>
+</div>
+
+<div class="quiz">
+  <div class="quiz__cont container">
+
+    <div class="quiz__cont-exit"></div>
+
+    <form class="row quiz__cont-form">
+
+      <h2 class="col-12 def-title">Опросный лист на средства измерения линейных, вибрационных или ударных ускорений</h2>
+
+      <h2 class="col-12 quiz__cont-sec__title def-title">Основные технические характеристики</h2>
+
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Измеряемая величина</div>
+
+        <div class="col-12 col-md-6 col-xl-4 quiz__cont-radio">
+          <label>
+            <input type="radio" name="izmer-vel">
+            <span>линейное ускорение</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 quiz__cont-radio">
+          <label>
+            <input type="radio" name="izmer-vel">
+            <span>вибрационное ускорение</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 quiz__cont-radio">
+          <label>
+            <input type="radio" name="izmer-vel">
+            <span>ударное ускорение</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="2">
+        <div class="col-12 sub-title">2. Диапазон изменений, м/с2</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="от">
+            <span>от</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="3">
+        <div class="col-12 sub-title">3. Частотный диапазон измерений, Гц</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="от">
+            <span>от</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="4">
+        <div class="col-12 sub-title">4. Смещение нуля</div>
+
+        <div class="col-12 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="5">
+        <div class="col-12 sub-title">5. Диапазон рабочих температур, °С</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="от">
+            <span>от</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="6">
+        <div class="col-12 sub-title">6. Погрешность</div>
+
+        <div class="m-wrap">
+          <div class="col-12 quiz__cont-var">
+            <label>
+              <input type="text" placeholder="%">
+              <span>Основная, %</span>
+            </label>
+          </div>
+
+          <div class="col-12 quiz__cont-var">
+            <label>
+              <input type="text" placeholder="%">
+              <span>Эксплуатационная, %</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="7">
+        <div class="col-12 sub-title">7. Выходной сигнал</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="мВ">
+            <span>мВ</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="В">
+            <span>В</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="мА">
+            <span>мА</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="мВ/В">
+            <span>мВ/В</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="пКл">
+            <span>пКл</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="1-Wire">
+            <span>1-Wire</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="RS-485">
+            <span>RS-485</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="Другое">
+            <span>Другое</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="8">
+        <div class="col-12 sub-title">8. Напряжение питания, В</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="от">
+            <span>от</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="9">
+        <div class="col-12 sub-title">9. Ток потребления, мА</div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="от">
+            <span>от</span>
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-3 quiz__cont-number">
+          <label>
+            <input type="text" placeholder="до">
+            <span>до</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="10">
+        <div class="col-12 sub-title">10. Тип крепления</div>
+
+        <div class="col-12 col-md-6 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Тип крепления">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="11">
+        <div class="col-12 sub-title">11. Тип подключения к кабельной сети</div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="Тип разъема">
+            <span>Тип разъема</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="Пайка" value="Пайка" style="display: none;">
+            <span>Пайка</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="Другое">
+            <span>Другое</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="12">
+        <div class="col-12 sub-title">12. Габаритные размеры</div>
+
+        <div class="col-12 col-md-4 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Длина">
+            <span>Длина, мм</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-4 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Ширина">
+            <span>Ширина, мм</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-4 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Высота">
+            <span>Высота, мм</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="13">
+        <div class="col-12 sub-title">13. Масса, г</div>
+
+        <div class="col-12 col-md-3 col-xl-2 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Масса">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="14">
+        <div class="col-12 sub-title">14. Ресурс, ч</div>
+
+        <div class="col-12 col-md-3 col-xl-2 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Ресурс">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="15">
+        <div class="col-12 sub-title">15. Срок службы, лет</div>
+
+        <div class="col-12 col-md-3 col-xl-2 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Срок службы">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="16">
+        <div class="col-12 sub-title">16. Прочие требования</div>
+
+        <div class="col-12 col-xl-8 col-xxl-6 quiz__cont-textarea">
+          <textarea placeholder="Прочие требования"></textarea>
+        </div>
+      </div>
+
+      <h2 class="col-12 quiz__cont-sec__title def-title">Характеристика рабочей среды</h2>
+
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Характеристика рабочей среды</div>
+
+        <div class="col-12 col-xl-8 col-xxl-6 quiz__cont-textarea">
+          <textarea placeholder="Характеристика рабочей среды"></textarea>
+        </div>
+      </div>
+
+      <h2 class="col-12 quiz__cont-sec__title def-title">Дополнительные требования</h2>
+
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Стойкость к спецфакторам</div>
+
+        <div class="col-12 col-xl-8 col-xxl-6 quiz__cont-textarea">
+          <textarea placeholder="Характеристика рабочей среды"></textarea>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="2">
+        <div class="col-12 sub-title">2. Стойкость к внешним воздействующим факторам</div>
+
+        <div class="col-12 col-md-6 col-xl-4 col-xxl-3 quiz__cont-var custom-label">
+          <label>
+            <input type="text" placeholder="до">
+            <span>Линейное ускорение, м/с2 <br> до</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 col-xxl-3 quiz__cont-var custom-label">
+          <label>
+            <span class="custom-label__wrap">
+              <input type="text" placeholder="до">
+              <input type="text" placeholder="(g)">
+              <input type="text" placeholder="до">
+            </span>
+            <span>Вибрация <br> ускорение, м/с2 <br> частота, Гц</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 col-xxl-3 quiz__cont-var custom-label">
+          <label>
+            <span class="custom-label__wrap">
+              <input type="text" placeholder="до">
+              <input type="text" placeholder="(g)">
+              <input type="text" placeholder="до">
+            </span>
+            <span>Удар <br> величина, м/с2 <br> длительность, с</span>
+          </label>
+        </div>
+
+      </div>
+
+      <div class="m-wrap" data-form="3">
+        <div class="col-12 sub-title">3. Требования к материалам</div>
+
+        <div class="col-12 col-xl-8 col-xxl-6 quiz__cont-textarea">
+          <textarea placeholder="Требования к материалам"></textarea>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="4">
+        <div class="col-12 sub-title">4. Вид приемки</div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="ОТК" style="display: none">
+            <span>ОТК</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="ВП МО РФ" style="display: none">
+            <span>ВП МО РФ</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-4 col-xl-3 quiz__cont-var">
+          <label>
+            <input type="text" placeholder="Другое">
+            <span>Другое</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="5">
+        <div class="col-12 sub-title">5. Прочие требования</div>
+
+        <div class="col-12 col-xl-8 col-xxl-6 quiz__cont-textarea">
+          <textarea placeholder="Прочие требования"></textarea>
+        </div>
+      </div>
+
+      <h2 class="col-12 quiz__cont-sec__title def-title">Условия поставки/разработки</h2>
+
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Партийность</div>
+
+        <div class="col-12 col-md-6 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Партийность">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="2">
+        <div class="col-12 sub-title">2. Срок поставки/разработки</div>
+
+        <div class="col-12 col-md-6 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Срок поставки/разработки">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="3">
+        <div class="col-12 sub-title">3. Источник финансирования</div>
+
+        <div class="col-12 col-md-6 col-xl-4 quiz__cont-radio">
+          <label>
+            <input type="radio" name="izmer-vel">
+            <span>Госзаказ</span>
+          </label>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 quiz__cont-radio">
+          <label>
+            <input type="radio" name="izmer-vel">
+            <span>Собственные средства</span>
+          </label>
+        </div>
+      </div>
+
+      <h2 class="col-12 quiz__cont-sec__title def-title">Сведения о заказчике</h2>
+
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Название предприятия</div>
+
+        <div class="col-12 col-md-6 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="1. Название предприятия">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="2">
+        <div class="col-12 sub-title">2. Адрес предприятия</div>
+
+        <div class="col-12 col-md-6 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Адрес предприятия">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="3">
+        <div class="col-12 sub-title">3. Веб-сайт</div>
+
+        <div class="col-12 col-md-6 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Веб-сайт">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="4">
+        <div class="col-12 sub-title">4. Сфера деятельности</div>
+
+        <div class="col-12 col-md-6 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Сфера деятельности">
+          </label>
+        </div>
+      </div>
+
+      <h2 class="col-12 quiz__cont-sec__title def-title">Контакты для обратной связи</h2>
+
+      <div class="m-wrap" data-form="1">
+        <div class="col-12 sub-title">1. Должность</div>
+
+        <div class="col-12 col-md-6 quiz__cont-text">
+          <label>
+            <input type="text" placeholder=" Должность">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="2">
+        <div class="col-12 sub-title">2. ФИО</div>
+
+        <div class="col-12 col-md-6 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="ФИО">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="3">
+        <div class="col-12 sub-title">3. Телефон</div>
+
+        <div class="col-12 col-md-6 quiz__cont-text">
+          <label>
+            <input type="text" placeholder="Телефон">
+          </label>
+        </div>
+      </div>
+
+      <div class="m-wrap" data-form="4">
+        <div class="col-12 sub-title">4. E-mail</div>
+
+        <div class="col-12 col-md-6 quiz__cont-text">
+          <label>
+            <input type="text" placeholder=" E-mail">
+          </label>
+        </div>
+      </div>
+
+      <div class="col-12 quiz__cont-license">
+        <label class="checkbox-label">
+          <input type="checkbox" checked>
+          <span>Отправляя свои данные, я согласен(-на) с Политикой конфиденциальности сайта.</span>
+        </label>
+      </div>
+
+      <div class="col-12 col-md-6 quiz__cont-submit">
+        <input type="submit" class="sub-button" value="Отправить">
+      </div>
+
+    </form>
+
+    <div class="popup-form__cont-thanks">
+      <div class="popup-form__cont-thanks-title">Спасибо за заявку!</div>
+      <div class="popup-form__cont-thanks-img">
+        <img src="./files/imgs/form.jpg" alt="">
+      </div>
+      <div class="popup-form__cont-thanks-text">Наш менеджер скоро с Вами свяжется.</div>
+    </div>
+
+  </div>
+
+</div>
+
+<!--<script defer src="./files/libs/jquery/jquery-3.3.1.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script defer src="./files/libs/jquery.mask.min.js"></script>
+<script defer src="./files/libs/OwlCarousel/owl.carousel.min.js"></script>
+<script defer src="./files/libs/slick/slick.js"></script>
+<script defer src="./main.js"></script>
+
+</body>
+</html>

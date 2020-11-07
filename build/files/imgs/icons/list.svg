@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0f0446;
+      }
+    </style>
+  </defs>
+  <g id="list" transform="translate(-1727 -351)">
+    <rect id="Rectangle_180" data-name="Rectangle 180" class="cls-1" width="2" height="2" rx="1" transform="translate(1727 351)"/>
+    <rect id="Rectangle_182" data-name="Rectangle 182" class="cls-1" width="2" height="2" rx="1" transform="translate(1727 361)"/>
+    <rect id="Rectangle_183" data-name="Rectangle 183" class="cls-1" width="2" height="2" rx="1" transform="translate(1727 356)"/>
+    <rect id="Rectangle_181" data-name="Rectangle 181" class="cls-1" width="12" height="2" rx="1" transform="translate(1731 351)"/>
+    <rect id="Rectangle_184" data-name="Rectangle 184" class="cls-1" width="12" height="2" rx="1" transform="translate(1731 356)"/>
+    <rect id="Rectangle_185" data-name="Rectangle 185" class="cls-1" width="12" height="2" rx="1" transform="translate(1731 361)"/>
+  </g>
+</svg>
