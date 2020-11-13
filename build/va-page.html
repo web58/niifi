@@ -15,69 +15,12 @@
 
   <link rel="shortcut icon" href="./files/imgs/favicon.ico" type="image/x-icon">
 
-  <title>НИФИ - Испытания</title>
+  <title>VAAAAAAA</title>
 
 </head>
-<body id="page-body">
+<body id="va-page">
 
-<style>
-
-  #preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    background-color: white;
-  }
-
-  #preloader img {
-    width: 200px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  body.visible #preloader{
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 1s linear;
-  }
-
-  body.hidden #preloader {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0s 1s, opacity 1s linear;
-    height: 0;
-    width: 0;
-
-  }
-
-</style>
-
-<div id="preloader" class="visible">
-  <img src="./files/imgs/icons/logo.png" alt="" style="max-width: 100px;">
-</div>
-
-<script>
-  var removePreloader = function (ms) {
-    return window.setTimeout(function () {
-      document.body.classList.add('hidden');
-      document.body.classList.remove('visible');
-    }, ms);
-  };
-
-  document.body.classList.add('visible');
-  var defaultRemove = removePreloader(3000);
-
-  window.onload = function () {
-    clearTimeout(defaultRemove);
-    removePreloader(0);
-  }
-</script>
+<!--//= ./blocks/preloader.html-->
 
 <header class="header" id="page-header">
 
@@ -158,142 +101,26 @@
 
 <main class="main">
 
-  <section class="breadcrumbs">
+  <section class="va-page">
+
     <div class="container">
+
       <div class="row">
+
         <div class="col-12">
-          <p><a href="/">Главная</a><span>/</span><strong>Испытания</strong></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="try-product">
-
-    <div class="container">
-      <div class="row">
-        <h2 class="col-12 def-title"><a href="#">испытания</a></h2>
-      </div>
-
-      <div class="row try-product__wrap">
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="./testing.html" class="inner">
-            <span class="try-product-text">Проведение испытаний в целях утверждения типа средств измерений</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="./testing.html" class="inner">
-            <span class="try-product-text">Анализ поверхностного монтажа на установке рентгеновского неразрушающего контроля YXLON COUGAR SMT</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="./testing.html" class="inner">
-            <span class="try-product-text">Проведение испытаний аппаратуры, приборов и устройств военного назначения</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="./testing.html" class="inner">
-            <span class="try-product-text">Анализ химического состава металлов и сплавов на оптическом эмиссионном спектрометре SOLARIS CCD PLUS</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Проведение поверки средств измерений в соответствии с областью аккредитации</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Анализ элементного химического состава твердых, порошковых и жидких проб</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Проведение метрологической экспертизы технической документации</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Определение механических свойств материалов</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Модернизация и разработка средств метрологического обеспечения (эталонов, специальных испытательных стендов)</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Энергоаудит</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Нанесение гальванических покрытий</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Проектирование, монтаж и обслуживание систем безопасности</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Получение микроструктур на высокоточной системе лазерной литографии DWL 66 FS с непосредственным формированием изображения</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Изготовление пластиковых окон и дверей</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Исследование образцов на макро-, микро-и наноразмерных уровнях, энергодисперсионный микроанализ</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Изготовление светодиодных светильников</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 try-product__item">
-          <a href="#" class="inner">
-            <span class="try-product-text">Определение фазового состава и кристаллической структуры материалов на современном рентгеновском оборудовании</span>
-            <span class="try-product__button def-button">Подробнее</span>
-          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius eos est eveniet fugit, illum, in nemo nisi officiis, pariatur quas ratione repellendus! Ad, nam quidem? Architecto at, sapiente! Doloremque excepturi iusto minus natus officia quidem voluptatibus? Ad adipisci doloribus dolorum, eos nisi, nulla odit officiis quia soluta sunt tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius eos est eveniet fugit, illum, in nemo nisi officiis, pariatur quas ratione repellendus! Ad, nam quidem? Architecto at, sapiente! Doloremque excepturi iusto minus natus officia quidem voluptatibus? Ad adipisci doloribus dolorum, eos nisi, nulla odit officiis quia soluta sunt tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius eos est eveniet fugit, illum, in nemo nisi officiis, pariatur quas ratione repellendus! Ad, nam quidem? Architecto at, sapiente! Doloremque excepturi iusto minus natus officia quidem voluptatibus? Ad adipisci doloribus dolorum, eos nisi, nulla odit officiis quia soluta sunt tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius eos est eveniet fugit, illum, in nemo nisi officiis, pariatur quas ratione repellendus! Ad, nam quidem? Architecto at, sapiente! Doloremque excepturi iusto minus natus officia quidem voluptatibus? Ad adipisci doloribus dolorum, eos nisi, nulla odit officiis quia soluta sunt tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius eos est eveniet fugit, illum, in nemo nisi officiis, pariatur quas ratione repellendus! Ad, nam quidem? Architecto at, sapiente! Doloremque excepturi iusto minus natus officia quidem voluptatibus? Ad adipisci doloribus dolorum, eos nisi, nulla odit officiis quia soluta sunt tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius eos est eveniet fugit, illum, in nemo nisi officiis, pariatur quas ratione repellendus! Ad, nam quidem? Architecto at, sapiente! Doloremque excepturi iusto minus natus officia quidem voluptatibus? Ad adipisci doloribus dolorum, eos nisi, nulla odit officiis quia soluta sunt tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius eos est eveniet fugit, illum, in nemo nisi officiis, pariatur quas ratione repellendus! Ad, nam quidem? Architecto at, sapiente! Doloremque excepturi iusto minus natus officia quidem voluptatibus? Ad adipisci doloribus dolorum, eos nisi, nulla odit officiis quia soluta sunt tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius eos est eveniet fugit, illum, in nemo nisi officiis, pariatur quas ratione repellendus! Ad, nam quidem? Architecto at, sapiente! Doloremque excepturi iusto minus natus officia quidem voluptatibus? Ad adipisci doloribus dolorum, eos nisi, nulla odit officiis quia soluta sunt tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius eos est eveniet fugit, illum, in nemo nisi officiis, pariatur quas ratione repellendus! Ad, nam quidem? Architecto at, sapiente! Doloremque excepturi iusto minus natus officia quidem voluptatibus? Ad adipisci doloribus dolorum, eos nisi, nulla odit officiis quia soluta sunt tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius eos est eveniet fugit, illum, in nemo nisi officiis, pariatur quas ratione repellendus! Ad, nam quidem? Architecto at, sapiente! Doloremque excepturi iusto minus natus officia quidem voluptatibus? Ad adipisci doloribus dolorum, eos nisi, nulla odit officiis quia soluta sunt tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius eos est eveniet fugit, illum, in nemo nisi officiis, pariatur quas ratione repellendus! Ad, nam quidem? Architecto at, sapiente! Doloremque excepturi iusto minus natus officia quidem voluptatibus? Ad adipisci doloribus dolorum, eos nisi, nulla odit officiis quia soluta sunt tempore.</p>
+          <span id="test-link">VAAAAAA</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam animi consequatur cum dolorem, dolores ducimus eaque esse exercitationem facere fugit illum iste itaque iure laboriosam laborum laudantium neque nostrum nulla quasi recusandae rem repellendus tempora ullam, vero voluptates voluptatum. Animi blanditiis consequatur eaque hic ipsam iusto nostrum, qui totam.</p>
         </div>
 
       </div>
@@ -1062,7 +889,7 @@
       </div>
 
       <div class="col-12 col-md-6 quiz__cont-submit">
-        <input type="submit" class="sub-button" value="Отправить">
+        <input type="submit" class="sub-button" value="��тправить">
       </div>
 
     </form>

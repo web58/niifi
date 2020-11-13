@@ -2936,3 +2936,8 @@ table {
     bottom: 40px; }
   .pezo__bot {
     margin-left: auto; } }
+
+#va-page .va-page #test-link {
+  display: block;
+  padding-top: 120px;
+  margin-top: -120px; }
